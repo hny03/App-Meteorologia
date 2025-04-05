@@ -201,7 +201,7 @@ fun MainScreen(
         drawerContent = {
             ModalDrawerSheet {
                 Text(
-                    "Menu",
+                    "HELLO",
                     modifier = Modifier.padding(16.dp),
                     style = MaterialTheme.typography.titleLarge
                 )
@@ -251,8 +251,19 @@ fun MainScreen(
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Clima App") },
-
+                    title = { Text("Clima") },
+                    navigationIcon = {
+                        var isDrawerOpen by remember { mutableStateOf(false) }
+                        IconButton(onClick = { isDrawerOpen = true }) {
+                            Icon(Icons.Default.Menu, contentDescription = "Menu")
+                        }
+                        if (isDrawerOpen) {
+                            LaunchedEffect(Unit) {
+                                drawerState.open()
+                                isDrawerOpen = false
+                            }
+                        }
+                    }
                 )
             }
         ) { innerPadding ->
