@@ -1,0 +1,38 @@
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Arquivos de build
+/build/
+**/build/
+
+# Arquivos de lock e binários gerados automaticamente
+*.lock
+*.bingit
+
+
+
+
+
+
+
+
+
+
+
+
+# Arquivo local de configuração do Android SDK
+local.properties
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+*.iws
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
