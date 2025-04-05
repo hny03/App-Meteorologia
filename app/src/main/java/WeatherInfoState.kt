@@ -5,4 +5,4 @@
 //data class WeatherInfoState (
 //    val weatherInfo: WeatherInfo? = null
 //)
-//ss
+//ssss
