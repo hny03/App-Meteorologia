@@ -12,6 +12,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -28,7 +29,6 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.climateapp.data.*
-import com.example.climateapp.data.remote.response.CityRepository
 import com.example.climateapp.ui.WeatherViewModel
 import com.example.climateapp.ui.components.*
 import com.example.climateapp.ui.theme.ClimateAppTheme
@@ -36,6 +36,14 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import com.example.climateapp.ui.theme.BlueSky
+import com.example.climateapp.ui.theme.DarkBlueSky
+import com.example.climateapp.ui.theme.DarkNightBlue
+import com.example.climateapp.ui.theme.LightBlueSky
+import com.example.climateapp.ui.theme.LightNightBlue
+import com.example.climateapp.ui.theme.NightBlue
 
 
 @AndroidEntryPoint
@@ -210,80 +218,124 @@ fun MainScreen(
                 )
             }
         ) { innerPadding ->
-            Column(
-                modifier = modifier
+            Box(
+                modifier = Modifier
                     .fillMaxSize()
-                    .verticalScroll(rememberScrollState())
-                    .padding(innerPadding)
-                    .padding(vertical = 16.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
+                    .background(
+                        brush = Brush.horizontalGradient(
+                            colors = if (state.weatherInfo?.isDay ?: true) {
+                                listOf(BlueSky, LightBlueSky)
+                            } else listOf(NightBlue, LightNightBlue)
+                        )
+                    )
             ) {
-                Card(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 16.dp),
-                    elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+                Column(
+                    modifier = modifier
+                        .fillMaxSize()
+                        .verticalScroll(rememberScrollState())
+                        .padding(innerPadding)
+                        .padding(vertical = 16.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Column(
+                    Card(
                         modifier = Modifier
-                            .padding(16.dp)
-                            .fillMaxWidth(),
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
-                        Row(
-                            modifier = Modifier.fillMaxWidth(),
-                            horizontalArrangement = Arrangement.SpaceBetween,
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Text("Localização Atual", style = MaterialTheme.typography.titleMedium)
-                            IconButton(onClick = onGetLocation) { Text("") }
-                        }
+                            .fillMaxWidth()
+                            .padding(horizontal = 16.dp),
+                        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
 
-                        currentLocation?.let { location ->
+                        colors = CardColors(
+                            containerColor = if (state.weatherInfo?.isDay ?: true) {
+                                DarkBlueSky
+                            } else {
+                                DarkNightBlue
+                            },
+                            contentColor = if (state.weatherInfo?.isDay ?: true) {
+                                Color.White
+                            } else {
+                                Color.White
+                            },
+                            disabledContainerColor = if (state.weatherInfo?.isDay ?: true) {
+                                DarkBlueSky.copy(alpha = 0.5f)
+                            } else {
+                                DarkNightBlue.copy(alpha = 0.5f)
+                            },
+                            disabledContentColor = Color.Gray
+                        )
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .padding(16.dp)
+                                .fillMaxWidth(),
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
                             Row(
                                 modifier = Modifier.fillMaxWidth(),
-                                horizontalArrangement = Arrangement.SpaceEvenly
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
                             ) {
-                                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                    Text("Latitude", style = MaterialTheme.typography.bodyMedium)
-                                    Text(
-                                        String.format("%.6f°", location.latitude),
-                                        style = MaterialTheme.typography.titleMedium
-                                    )
-                                }
-                                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                    Text("Longitude", style = MaterialTheme.typography.bodyMedium)
-                                    Text(
-                                        String.format("%.6f°", location.longitude),
-                                        style = MaterialTheme.typography.titleMedium
-                                    )
-                                }
+                                Text(
+                                    "Localização Atual",
+                                    style = MaterialTheme.typography.titleMedium
+                                )
+                                IconButton(onClick = onGetLocation) { Text("") }
                             }
-                        } ?: Text(
-                            text = "Localização não disponível",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
+
+                            currentLocation?.let { location ->
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceEvenly
+                                ) {
+                                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                                        Text(
+                                            "Latitude",
+                                            style = MaterialTheme.typography.bodyMedium
+                                        )
+                                        Text(
+                                            String.format("%.6f°", location.latitude),
+                                            style = MaterialTheme.typography.titleMedium
+                                        )
+                                    }
+                                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                                        Text(
+                                            "Longitude",
+                                            style = MaterialTheme.typography.bodyMedium
+                                        )
+                                        Text(
+                                            String.format("%.6f°", location.longitude),
+                                            style = MaterialTheme.typography.titleMedium
+                                        )
+                                    }
+                                }
+                            } ?: Text(
+                                text = "Localização não disponível",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
                     }
-                }
 
-                Spacer(modifier = Modifier.height(16.dp))
-
-                state.weatherInfo?.let {
-                    val currentWeather = CurrentWeather(
-                        temperature = it.temperature ?: 0.0,
-                        humidity = it.humidity ?: 0,
-                        windSpeed = it.windSpeed ?: 0.0,
-                        rain = it.rain ?: 0.0,
-                        description = it.condition ?: "N/A",
-                        icon = it.Icon ?: "01d"
-                    )
-
-                    CurrentWeatherCard(currentWeather)
                     Spacer(modifier = Modifier.height(16.dp))
-                    HourlyForecastRow(state.hourlyForecast)
-                    Spacer(modifier = Modifier.height(16.dp))
-                    DailyForecastList(state.dailyForecast)
+
+                    state.weatherInfo?.let {
+                        val currentWeather = CurrentWeather(
+                            temperature = it.temperature ?: 0.0,
+                            humidity = it.humidity ?: 0,
+                            windSpeed = it.windSpeed ?: 0.0,
+                            rain = it.rain ?: 0.0,
+                            description = it.condition ?: "N/A",
+                            icon = it.icon ?: "01d",
+                            city = it.locationName ?: ""
+                        )
+                        val cor = if (state.weatherInfo?.isDay ?: true) {
+                            DarkBlueSky
+                        } else DarkNightBlue
+
+                        CurrentWeatherCard(currentWeather, context, cor)
+                        Spacer(modifier = Modifier.height(16.dp))
+                        HourlyForecastRow(state.hourlyForecast, cor)
+                        Spacer(modifier = Modifier.height(16.dp))
+                        DailyForecastList(state.dailyForecast, cor)
+                    }
                 }
             }
         }

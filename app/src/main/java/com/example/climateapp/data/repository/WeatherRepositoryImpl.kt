@@ -7,7 +7,6 @@ import com.example.climateapp.data.remote.RemoteDataSource
 import com.example.climateapp.data.DailyForecast
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-import java.time.ZonedDateTime
 import javax.inject.Inject
 
 class WeatherRepositoryImpl @Inject constructor(
@@ -33,7 +32,7 @@ class WeatherRepositoryImpl @Inject constructor(
 
         return WeatherInfo(
             locationName = weather.cityName,
-            Icon = weather.weather.icon,
+            icon = weather.weather.icon,
             codeIcon = weather.weather.code,
             condition = weather.weather.description,
             temperature = weather.temperature,
@@ -41,8 +40,8 @@ class WeatherRepositoryImpl @Inject constructor(
             //dayOfWeek = LocalDate.now().dayOfWeek.getDisplayName(TextStyle.FULL, Locale.getDefault()),
             humidity = weather.relativeHumidity,
             windSpeed = weather.windSpeed,
-            rain = weather.precipitation
-            //isDay = true
+            rain = weather.precipitation,
+            isDay = weather.weather.icon.last() == 'd'
         )
     }
 

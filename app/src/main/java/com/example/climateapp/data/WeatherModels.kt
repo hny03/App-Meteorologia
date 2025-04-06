@@ -8,7 +8,8 @@ data class CurrentWeather(
     val windSpeed: Double,
     val rain: Double,
     val description: String,
-    val icon: String
+    val icon: String,
+    val city: String
 )
 
 data class HourlyForecast(
