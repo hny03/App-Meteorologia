@@ -19,7 +19,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -35,9 +34,7 @@ import com.example.climateapp.ui.WeatherViewModel
 import com.example.climateapp.ui.components.*
 import com.example.climateapp.ui.theme.ClimateAppTheme
 import dagger.hilt.android.AndroidEntryPoint
-import java.time.DayOfWeek
 import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -64,7 +61,6 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("ClimaApp", "MainActivity criada")
         enableEdgeToEdge()
 
         locationService = LocationService(this)
@@ -72,7 +68,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             ClimateAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Log.d("ClimaApp", "Renderizando MainScreen...")
                     MainScreen(
                         modifier = Modifier.padding(innerPadding),
                         currentLocation = currentLocation,
@@ -86,37 +81,27 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun checkLocationPermission() {
-        Log.d("ClimaApp", "Verificando permissão de localização")
         when {
             ContextCompat.checkSelfPermission(
                 this,
                 Manifest.permission.ACCESS_FINE_LOCATION
-            ) == PackageManager.PERMISSION_GRANTED -> {
-                Log.d("ClimaApp", "Permissão já concedida")
-                getLocation()
-            }
-            else -> {
-                Log.d("ClimaApp", "Solicitando permissão de localização")
-                locationPermissionRequest.launch(
-                    arrayOf(
-                        Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.ACCESS_COARSE_LOCATION
-                    )
+            ) == PackageManager.PERMISSION_GRANTED -> getLocation()
+            else -> locationPermissionRequest.launch(
+                arrayOf(
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
                 )
-            }
+            )
         }
     }
 
     private fun getLocation() {
-        Log.d("ClimaApp", "Obtendo localização atual")
         if (!locationService.isLocationEnabled()) {
-            Log.d("ClimaApp", "Serviços de localização estão desativados")
             Toast.makeText(this, "Ative os serviços de localização", Toast.LENGTH_LONG).show()
             return
         }
 
         locationService.getLastLocation { location ->
-            Log.d("ClimaApp", "Localização recebida: $location")
             currentLocation = location
             if (location == null) {
                 Toast.makeText(this, "Não foi possível obter a localização. Verifique o GPS.", Toast.LENGTH_LONG).show()
@@ -125,7 +110,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScreen(
     modifier: Modifier = Modifier,
@@ -134,35 +118,25 @@ fun MainScreen(
 ) {
     val viewModel: WeatherViewModel = viewModel()
     val state = viewModel.weatherInfoState.collectAsState().value
-    var drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
-    var searchQuery by remember { mutableStateOf("") }
-    var showSearchResults by remember { mutableStateOf(false) }
     val context = LocalContext.current
     val cityRepository = remember { CityRepository(context) }
+    var searchQuery by remember { mutableStateOf("") }
+    var showSearchResults by remember { mutableStateOf(false) }
     val searchResults = remember(searchQuery) {
-        if (searchQuery.length >= 2) {
-            cityRepository.searchCities(searchQuery)
-        } else {
-            emptyList()
-        }
+        if (searchQuery.length >= 2) cityRepository.searchCities(searchQuery) else emptyList()
     }
 
     LaunchedEffect(currentLocation) {
-        Log.d("ClimaApp", "LaunchedEffect acionado. Localização = $currentLocation")
         currentLocation?.let {
-            Log.d("ClimaApp", "Chamando ViewModel com lat=${it.latitude}, lon=${it.longitude}")
             viewModel.updateWeatherInfo(it.latitude.toFloat(), it.longitude.toFloat())
         }
     }
 
     val weatherData = state.weatherInfo?.let {
-        // Data atual para calcular os dias da semana
         val today = LocalDate.now()
-
-        // Função para obter o nome do dia da semana começando por sexta-feira
         fun getDayOfWeekString(dayOffset: Int): String {
             val date = today.plusDays(dayOffset.toLong())
-            return date.dayOfWeek.name.capitalize() // Ex: Sexta, Sábado, etc.
+            return date.dayOfWeek.name.capitalize()
         }
 
         WeatherData(
@@ -174,18 +148,9 @@ fun MainScreen(
                 description = it.condition ?: "N/A",
                 icon = it.Icon ?: "01d"
             ),
-            hourly = List(6) { hour ->
-                // Começando das 21:00
-                val hourTime = 21 + hour
-                HourlyForecast(
-                    time = "${if (hourTime > 12) hourTime - 12 else hourTime}:00", // Ajuste para 12h format
-                    temperature = 25.0 + hour,
-                    icon = "01d"
-                )
-            },
+            hourly = state.hourlyForecast, // ✅ agora vem da API
             daily = List(7) { day ->
-                // Calculando os dias começando por sexta-feira
-                val dayOfWeek = getDayOfWeekString(day + 2) // "2" porque hoje é considerado 0 e sexta-feira é 2
+                val dayOfWeek = getDayOfWeekString(day + 2)
                 DailyForecast(
                     date = dayOfWeek,
                     maxTemperature = 28.0 + day,
@@ -197,19 +162,14 @@ fun MainScreen(
     }
 
     ModalNavigationDrawer(
-        drawerState = drawerState,
         drawerContent = {
             ModalDrawerSheet {
-                Text(
-                    "Menu",
-                    modifier = Modifier.padding(16.dp),
-                    style = MaterialTheme.typography.titleLarge
-                )
+                Text("Menu", modifier = Modifier.padding(16.dp), style = MaterialTheme.typography.titleLarge)
                 Divider()
                 Box {
                     OutlinedTextField(
                         value = searchQuery,
-                        onValueChange = { 
+                        onValueChange = {
                             searchQuery = it
                             showSearchResults = true
                         },
@@ -220,7 +180,6 @@ fun MainScreen(
                         leadingIcon = { Icon(Icons.Default.Search, contentDescription = "Search") },
                         singleLine = true
                     )
-                    
                     if (showSearchResults && searchResults.isNotEmpty()) {
                         Surface(
                             modifier = Modifier
@@ -250,10 +209,7 @@ fun MainScreen(
     ) {
         Scaffold(
             topBar = {
-                TopAppBar(
-                    title = { Text("Clima App") },
-
-                )
+                TopAppBar(title = { Text("Clima App") })
             }
         ) { innerPadding ->
             Column(
@@ -311,10 +267,9 @@ fun MainScreen(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 weatherData?.let {
-                    Log.d("ClimaApp", "Renderizando dados do clima com API")
                     CurrentWeatherCard(it.current)
                     Spacer(modifier = Modifier.height(16.dp))
-                    HourlyForecastRow(it.hourly)
+                    HourlyForecastRow(it.hourly) // ✅ mostra as próximas 6 horas reais
                     Spacer(modifier = Modifier.height(16.dp))
                     DailyForecastList(it.daily)
                 }
