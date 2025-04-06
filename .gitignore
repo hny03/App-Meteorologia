@@ -1,0 +1,77 @@
+# Diretórios e arquivos padrão do Android Studio
+.idea/
+*.iml
+.gradle/
+local.properties
+
+# Diretórios de build
+/build/
+**/build/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos do log
+*.log
+
+# Arquivos de cache de IDE
+.cxx/
+.externalNativeBuild/
+captures/
+*.hprof
+
+# Arquivos temporários de execução
+*.apk
+*.ap_
+*.dex
+*.class
+*.so
+*.jar
+*.war
+*.keystore
+*.jks
+
+# Configuração pessoal do Android Studio
+/.vscode/
+*.swp
+
+# Arquivos Kotlin/Java temporários
+*.tmp
+*.bak
+
+# Configuração de distribuição do Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Configurações locais do Gradle
+gradle-app.setting
+gradle.properties.local
+
+# Cache do lint
+lint/intermediates/
+lint/generated/
+
+# Arquivos de lock gerados
+**/checksums.lock
+**/*.lock
+
+# Configurações do sistema
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/gradle.xml
+
+# Autogerados por plugins
+.kotlinc/
+.kts.cache/
+
+# IntelliJ
+out/
+
+# Mac/Linux swap files
+*~
+
+# Windows
+ehthumbs.db
+Desktop.ini

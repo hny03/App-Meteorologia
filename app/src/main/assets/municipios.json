@@ -1,0 +1,128 @@
+[
+  {
+    "city_name": "São Paulo",
+    "state": "SP",
+    "lat": -23.55052,
+    "lon": -46.63331
+  },
+  {
+    "city_name": "Rio de Janeiro",
+    "state": "RJ",
+    "lat": -22.90685,
+    "lon": -43.1729
+  },
+  {
+    "city_name": "Belo Horizonte",
+    "state": "MG",
+    "lat": -19.9245,
+    "lon": -43.9352
+  },
+  {
+    "city_name": "Brasília",
+    "state": "DF",
+    "lat": -15.77972,
+    "lon": -47.92972
+  },
+  {
+    "city_name": "Salvador",
+    "state": "BA",
+    "lat": -12.97139,
+    "lon": -38.50139
+  },
+  {
+    "city_name": "Fortaleza",
+    "state": "CE",
+    "lat": -3.71722,
+    "lon": -38.54306
+  },
+  {
+    "city_name": "Curitiba",
+    "state": "PR",
+    "lat": -25.42961,
+    "lon": -49.27193
+  },
+  {
+    "city_name": "Manaus",
+    "state": "AM",
+    "lat": -3.10194,
+    "lon": -60.025
+  },
+  {
+    "city_name": "Recife",
+    "state": "PE",
+    "lat": -8.05389,
+    "lon": -34.88111
+  },
+  {
+    "city_name": "Porto Alegre",
+    "state": "RS",
+    "lat": -30.0277,
+    "lon": -51.2287
+  },
+  {
+    "city_name": "Belém",
+    "state": "PA",
+    "lat": -1.45583,
+    "lon": -48.50389
+  },
+  {
+    "city_name": "Goiânia",
+    "state": "GO",
+    "lat": -16.68639,
+    "lon": -49.26417
+  },
+  {
+    "city_name": "Guarulhos",
+    "state": "SP",
+    "lat": -23.4628,
+    "lon": -46.5333
+  },
+  {
+    "city_name": "Campinas",
+    "state": "SP",
+    "lat": -22.90556,
+    "lon": -47.06083
+  },
+  {
+    "city_name": "São Luís",
+    "state": "MA",
+    "lat": -2.52972,
+    "lon": -44.30278
+  },
+  {
+    "city_name": "São Gonçalo",
+    "state": "RJ",
+    "lat": -22.8268,
+    "lon": -43.0634
+  },
+  {
+    "city_name": "Maceió",
+    "state": "AL",
+    "lat": -9.66583,
+    "lon": -35.73528
+  },
+  {
+    "city_name": "Duque de Caxias",
+    "state": "RJ",
+    "lat": -22.78556,
+    "lon": -43.31167
+  },
+  {
+    "city_name": "Natal",
+    "state": "RN",
+    "lat": -5.79448,
+    "lon": -35.211
+  },
+  {
+    "city_name": "Teresina",
+    "state": "PI",
+    "lat": -5.08917,
+    "lon": -42.80194
+  },
+  {
+    "city_name": "Uberlândia",
+    "state": "MG",
+    "lat": -18.914,
+    "lon": -48.2748
+  }
+]
