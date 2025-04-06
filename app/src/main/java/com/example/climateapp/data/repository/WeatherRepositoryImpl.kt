@@ -4,8 +4,10 @@ import android.util.Log
 import com.example.climateapp.data.HourlyForecast
 import com.example.climateapp.data.di.module.WeatherInfo
 import com.example.climateapp.data.remote.RemoteDataSource
-import java.time.ZonedDateTime
+import com.example.climateapp.data.DailyForecast
+import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.time.ZonedDateTime
 import javax.inject.Inject
 
 class WeatherRepositoryImpl @Inject constructor(
@@ -25,7 +27,6 @@ class WeatherRepositoryImpl @Inject constructor(
 
         val hourlyForecast = remoteDataSource.getHourlyForecastFromWeatherbit(lat, lng)
 
-        // Apenas para log e teste por enquanto
         hourlyForecast.take(5).forEach {
             Log.d("WeatherbitHourly", "${it.timestampUtc} - ${it.temp}°C - ${it.weather.description}")
         }
@@ -41,7 +42,7 @@ class WeatherRepositoryImpl @Inject constructor(
             humidity = weather.relativeHumidity,
             windSpeed = weather.windSpeed,
             rain = weather.precipitation
-            //isDay = true // pode ser usado se quiser identificar dia/noite
+            //isDay = true
         )
     }
 
@@ -60,10 +61,33 @@ class WeatherRepositoryImpl @Inject constructor(
                 "--:--"
             }
 
-
             HourlyForecast(
                 time = time,
                 temperature = it.temp,
+                icon = it.weather.icon
+            )
+        }
+    }
+
+    override suspend fun getDailyForecast(lat: Float, lng: Float): List<DailyForecast> {
+        val data = remoteDataSource.getDailyForecastFromWeatherbit(lat, lng)
+
+        return data.take(7).map {
+            val day = try {
+                LocalDate.parse(it.valid_date)
+                    .dayOfWeek
+                    .getDisplayName(java.time.format.TextStyle.SHORT, java.util.Locale("pt", "BR"))
+                    .replaceFirstChar { if (it.isLowerCase()) it.titlecase() else it.toString() }
+                    .replace(".", "")
+            } catch (e: Exception) {
+                Log.e("ParseDay", "Erro ao converter data: ${it.valid_date}", e)
+                "Dia"
+            }
+
+            DailyForecast(
+                date = day,
+                maxTemperature = it.max_temp,
+                minTemperature = it.min_temp,
                 icon = it.weather.icon
             )
         }

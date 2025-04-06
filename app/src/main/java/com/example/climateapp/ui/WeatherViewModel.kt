@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.climateapp.data.HourlyForecast
 import com.example.climateapp.data.repository.WeatherRepository
+import com.example.climateapp.data.DailyForecast
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -29,14 +30,17 @@ class WeatherViewModel @Inject constructor(
 
                 val weatherInfo = repository.getWeatherData(latitude, longitude)
                 val hourlyForecast = repository.getHourlyForecast(latitude, longitude)
+                val dailyForecast = repository.getDailyForecast(latitude, longitude)
 
                 Log.d("ClimaApp", "Dados recebidos da API: $weatherInfo")
                 Log.d("ClimaApp", "Previsão horária: $hourlyForecast")
+                Log.d("ClimaApp", "Previsão diária: $dailyForecast")
 
                 _weatherInfoState.update {
                     it.copy(
                         weatherInfo = weatherInfo,
                         hourlyForecast = hourlyForecast,
+                        dailyForecast = dailyForecast,
                         isLoading = false,
                         error = null
                     )
@@ -58,4 +62,3 @@ class WeatherViewModel @Inject constructor(
         _weatherInfoState.update { it.copy(error = null) }
     }
 }
-

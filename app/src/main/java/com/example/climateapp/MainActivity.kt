@@ -34,7 +34,8 @@ import com.example.climateapp.ui.WeatherViewModel
 import com.example.climateapp.ui.components.*
 import com.example.climateapp.ui.theme.ClimateAppTheme
 import dagger.hilt.android.AndroidEntryPoint
-import java.time.LocalDate
+import com.example.climateapp.ui.components.DailyForecastList
+
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -45,15 +46,12 @@ class MainActivity : ComponentActivity() {
     private val locationPermissionRequest = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) { permissions ->
-        Log.d("ClimaApp", "Resultado da permissão: $permissions")
         when {
             permissions.getOrDefault(Manifest.permission.ACCESS_FINE_LOCATION, false) ||
                     permissions.getOrDefault(Manifest.permission.ACCESS_COARSE_LOCATION, false) -> {
-                Log.d("ClimaApp", "Permissão de localização concedida")
                 getLocation()
             }
             else -> {
-                Log.d("ClimaApp", "Permissão de localização negada")
                 Toast.makeText(this, "A permissão de localização é obrigatória", Toast.LENGTH_LONG).show()
             }
         }
@@ -133,12 +131,6 @@ fun MainScreen(
     }
 
     val weatherData = state.weatherInfo?.let {
-        val today = LocalDate.now()
-        fun getDayOfWeekString(dayOffset: Int): String {
-            val date = today.plusDays(dayOffset.toLong())
-            return date.dayOfWeek.name.capitalize()
-        }
-
         WeatherData(
             current = CurrentWeather(
                 temperature = it.temperature ?: 0.0,
@@ -148,16 +140,8 @@ fun MainScreen(
                 description = it.condition ?: "N/A",
                 icon = it.Icon ?: "01d"
             ),
-            hourly = state.hourlyForecast, // ✅ agora vem da API
-            daily = List(7) { day ->
-                val dayOfWeek = getDayOfWeekString(day + 2)
-                DailyForecast(
-                    date = dayOfWeek,
-                    maxTemperature = 28.0 + day,
-                    minTemperature = 20.0 + day,
-                    icon = "01d"
-                )
-            }
+            hourly = state.hourlyForecast,
+            daily = state.dailyForecast
         )
     }
 
@@ -269,7 +253,7 @@ fun MainScreen(
                 weatherData?.let {
                     CurrentWeatherCard(it.current)
                     Spacer(modifier = Modifier.height(16.dp))
-                    HourlyForecastRow(it.hourly) // ✅ mostra as próximas 6 horas reais
+                    HourlyForecastRow(it.hourly)
                     Spacer(modifier = Modifier.height(16.dp))
                     DailyForecastList(it.daily)
                 }

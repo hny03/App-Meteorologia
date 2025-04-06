@@ -2,7 +2,7 @@ package com.example.climateapp.data.repository
 
 import com.example.climateapp.data.HourlyForecast
 import com.example.climateapp.data.di.module.WeatherInfo
-import com.example.climateapp.ui.components.weathercomponents.DailyForecast
+import com.example.climateapp.data.DailyForecast
 
 interface WeatherRepository {
 
