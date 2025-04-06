@@ -1,38 +1,42 @@
-# Gradle
-.gradle/
-!gradle/wrapper/gradle-wrapper.jar
-!gradle/wrapper/gradle-wrapper.properties
+# macOS
+.DS_Store
 
-# Arquivos de build
-/build/
-**/build/
-
-# Arquivos de lock e binários gerados automaticamente
-*.lock
-*.bingit
-
-
-
-
-
-
-
-
-
-
-
-
-# Arquivo local de configuração do Android SDK
-local.properties
-
-# IntelliJ/Android Studio
+# Android Studio
 .idea/
 *.iml
-*.iws
 
-# Logs
+# Gradle
+.gradle/
+build/
+**/build/
+.kotlinc/
+.kts.cache/
+
+# Arquivos temporários e de sistema
 *.log
-
-# Sistema operacional
-.DS_Store
+*.tmp
+*.bak
+*.swp
+*.class
+*.apk
+*.ap_
+*.dex
+*.jar
+*.keystore
+*.jks
+*.hprof
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+.vscode/
+out/
+
+# Lint, cache, lock
+lint/
+**/*.lock
+**/checksums.lock
+
+# Arquivos locais e configs pessoais
+local.properties
+gradle-app.setting
+gradle.properties.local
