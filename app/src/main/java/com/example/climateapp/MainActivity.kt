@@ -16,9 +16,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -34,7 +33,9 @@ import com.example.climateapp.ui.WeatherViewModel
 import com.example.climateapp.ui.components.*
 import com.example.climateapp.ui.theme.ClimateAppTheme
 import dagger.hilt.android.AndroidEntryPoint
-import com.example.climateapp.ui.components.DailyForecastList
+import kotlinx.coroutines.launch
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.rememberScrollState
 
 
 @AndroidEntryPoint
@@ -117,11 +118,13 @@ fun MainScreen(
     val viewModel: WeatherViewModel = viewModel()
     val state = viewModel.weatherInfoState.collectAsState().value
     val context = LocalContext.current
-    val cityRepository = remember { CityRepository(context) }
+    val cidades = remember { carregarCidadesDoJson(context) }
     var searchQuery by remember { mutableStateOf("") }
     var showSearchResults by remember { mutableStateOf(false) }
     val searchResults = remember(searchQuery) {
-        if (searchQuery.length >= 2) cityRepository.searchCities(searchQuery) else emptyList()
+        if (searchQuery.length >= 2)
+            cidades.filter { it.city_name.contains(searchQuery, ignoreCase = true) }
+        else emptyList()
     }
 
     LaunchedEffect(currentLocation) {
@@ -130,25 +133,22 @@ fun MainScreen(
         }
     }
 
-    val weatherData = state.weatherInfo?.let {
-        WeatherData(
-            current = CurrentWeather(
-                temperature = it.temperature ?: 0.0,
-                humidity = it.humidity ?: 0,
-                windSpeed = it.windSpeed ?: 0.0,
-                rain = it.rain ?: 0.0,
-                description = it.condition ?: "N/A",
-                icon = it.Icon ?: "01d"
-            ),
-            hourly = state.hourlyForecast,
-            daily = state.dailyForecast
-        )
+    LaunchedEffect(state.dailyForecast) {
+        Log.d("DEBUG", "DailyForecast size: ${state.dailyForecast.size}")
     }
 
+    val drawerState = rememberDrawerState(DrawerValue.Closed)
+    val scope = rememberCoroutineScope()
+
     ModalNavigationDrawer(
+        drawerState = drawerState,
         drawerContent = {
             ModalDrawerSheet {
-                Text("Menu", modifier = Modifier.padding(16.dp), style = MaterialTheme.typography.titleLarge)
+                Text(
+                    text = "Menu",
+                    modifier = Modifier.padding(16.dp),
+                    style = MaterialTheme.typography.titleLarge
+                )
                 Divider()
                 Box {
                     OutlinedTextField(
@@ -161,7 +161,9 @@ fun MainScreen(
                             .fillMaxWidth()
                             .padding(16.dp),
                         placeholder = { Text("Pesquisar localização...") },
-                        leadingIcon = { Icon(Icons.Default.Search, contentDescription = "Search") },
+                        leadingIcon = {
+                            Icon(Icons.Default.Search, contentDescription = "Search")
+                        },
                         singleLine = true
                     )
                     if (showSearchResults && searchResults.isNotEmpty()) {
@@ -181,6 +183,11 @@ fun MainScreen(
                                             searchQuery = "${city.city_name}, ${city.state}"
                                             showSearchResults = false
                                             viewModel.updateWeatherInfo(city.lat.toFloat(), city.lon.toFloat())
+
+                                            // Fechar o menu lateral (hambúrguer)
+                                            scope.launch {
+                                                drawerState.close()
+                                            }
                                         }
                                     )
                                 }
@@ -193,7 +200,14 @@ fun MainScreen(
     ) {
         Scaffold(
             topBar = {
-                TopAppBar(title = { Text("Clima App") })
+                TopAppBar(
+                    title = { Text("Previsão do Tempo") },
+                    navigationIcon = {
+                        IconButton(onClick = { scope.launch { drawerState.open() } }) {
+                            Icon(Icons.Default.Menu, contentDescription = "Menu")
+                        }
+                    }
+                )
             }
         ) { innerPadding ->
             Column(
@@ -204,7 +218,6 @@ fun MainScreen(
                     .padding(vertical = 16.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Location Card
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -233,11 +246,17 @@ fun MainScreen(
                             ) {
                                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                     Text("Latitude", style = MaterialTheme.typography.bodyMedium)
-                                    Text(String.format("%.6f°", location.latitude), style = MaterialTheme.typography.titleMedium)
+                                    Text(
+                                        String.format("%.6f°", location.latitude),
+                                        style = MaterialTheme.typography.titleMedium
+                                    )
                                 }
                                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                     Text("Longitude", style = MaterialTheme.typography.bodyMedium)
-                                    Text(String.format("%.6f°", location.longitude), style = MaterialTheme.typography.titleMedium)
+                                    Text(
+                                        String.format("%.6f°", location.longitude),
+                                        style = MaterialTheme.typography.titleMedium
+                                    )
                                 }
                             }
                         } ?: Text(
@@ -250,12 +269,21 @@ fun MainScreen(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-                weatherData?.let {
-                    CurrentWeatherCard(it.current)
+                state.weatherInfo?.let {
+                    val currentWeather = CurrentWeather(
+                        temperature = it.temperature ?: 0.0,
+                        humidity = it.humidity ?: 0,
+                        windSpeed = it.windSpeed ?: 0.0,
+                        rain = it.rain ?: 0.0,
+                        description = it.condition ?: "N/A",
+                        icon = it.Icon ?: "01d"
+                    )
+
+                    CurrentWeatherCard(currentWeather)
                     Spacer(modifier = Modifier.height(16.dp))
-                    HourlyForecastRow(it.hourly)
+                    HourlyForecastRow(state.hourlyForecast)
                     Spacer(modifier = Modifier.height(16.dp))
-                    DailyForecastList(it.daily)
+                    DailyForecastList(state.dailyForecast)
                 }
             }
         }
