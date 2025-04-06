@@ -1,4 +1,6 @@
 package com.example.climateapp.data
+import kotlinx.serialization.Serializable
+
 
 data class CurrentWeather(
     val temperature: Double,
@@ -26,4 +28,11 @@ data class WeatherData(
     val current: CurrentWeather,
     val hourly: List<HourlyForecast>,
     val daily: List<DailyForecast>
-) 
+)
+@Serializable
+data class Cidade(
+    val city_name: String,
+    val state: String,
+    val lat: Double,
+    val lon: Double
+)

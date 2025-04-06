@@ -35,9 +35,9 @@ fun CurrentWeatherCard(weather: CurrentWeather) {
                 text = weather.description,
                 style = MaterialTheme.typography.titleMedium
             )
-            
+
             Spacer(modifier = Modifier.height(16.dp))
-            
+
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -62,7 +62,7 @@ fun HourlyForecastRow(forecasts: List<HourlyForecast>) {
             modifier = Modifier.padding(16.dp)
         ) {
             Text(
-                text = "Hourly Forecast",
+                text = "Previsão por Hora",
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
@@ -105,13 +105,13 @@ fun DailyForecastList(forecasts: List<DailyForecast>) {
             modifier = Modifier.padding(16.dp)
         ) {
             Text(
-                text = "7-Day Forecast",
+                text = "Previsão dos Próximos 7 Dias",
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
-            forecasts.forEach { forecast ->
+            forecasts.forEachIndexed { index, forecast ->
                 DailyForecastItem(forecast)
-                if (forecast != forecasts.last()) {
+                if (index < forecasts.lastIndex) {
                     Divider(modifier = Modifier.padding(vertical = 8.dp))
                 }
             }
@@ -134,7 +134,7 @@ fun DailyForecastItem(forecast: DailyForecast) {
             modifier = Modifier.weight(1f)
         )
         Text(
-            text = "${forecast.maxTemperature}°C / ${forecast.minTemperature}°C",
+            text = "${forecast.minTemperature}°C / ${forecast.maxTemperature}°C",
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.End
         )
@@ -155,4 +155,4 @@ fun WeatherInfoItem(label: String, value: String) {
             style = MaterialTheme.typography.titleMedium
         )
     }
-} 
+}

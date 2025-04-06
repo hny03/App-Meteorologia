@@ -1,5 +1,8 @@
 package com.example.climateapp.data.di.module
 
+import com.example.climateapp.data.HourlyForecast
+import com.example.climateapp.data.DailyForecast
+
 data class WeatherInfo(
     val locationName: String,
     val Icon: String,
@@ -7,8 +10,9 @@ data class WeatherInfo(
     val condition: String,
     val temperature: Double,
     val apparentTemperature: Double,
-    //al dayOfWeek: String,
     val humidity: Int,
     val windSpeed: Double,
-    val rain: Double
+    val rain: Double,
+    val hourlyForecast: List<HourlyForecast> = emptyList(),
+    val dailyForecast: List<DailyForecast> = emptyList()
 )

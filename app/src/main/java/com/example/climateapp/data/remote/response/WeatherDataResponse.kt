@@ -27,7 +27,7 @@ data class WeatherData(
     @SerialName("clouds") val clouds: Int,
     @SerialName("vis") val visibility: Int,
     @SerialName("wind_spd") val windSpeed: Double,
-    @SerialName("gust") val gust: Double,
+    @SerialName("gust") val gust: Double? = null,
     @SerialName("wind_cdir_full") val windCdirFull: String,
     @SerialName("app_temp") val apparentTemperature: Double,
     @SerialName("state_code") val stateCode: String,
