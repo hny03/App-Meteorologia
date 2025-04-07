@@ -144,7 +144,7 @@ fun MainScreen(
             val normalizedQuery = normalizeText(searchQuery)
             cidades.filter {
                 normalizeText(it.city_name).contains(normalizedQuery, ignoreCase = true) ||
-                normalizeText(it.state_code).contains(normalizedQuery, ignoreCase = true)
+                        normalizeText(it.state_code).contains(normalizedQuery, ignoreCase = true)
             }
         } else emptyList()
     }
@@ -169,7 +169,7 @@ fun MainScreen(
                 modifier = Modifier
                     .fillMaxHeight()
                     .width(280.dp),
-                drawerContainerColor = if (state.weatherInfo?.isDay ?: true) LightBlueSky else LightNightBlue,
+                drawerContainerColor = if (state.weatherInfo?.isDay ?: true) DarkBlueSky else NightBlue,
                 drawerContentColor = Color.White
             ) {
                 Column(
@@ -219,9 +219,9 @@ fun MainScreen(
                         },
                         singleLine = true,
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedContainerColor = Color(0xFFA8C5F0),
-                            disabledContainerColor = Color(0xFFA8C5F0),
-                            unfocusedContainerColor = Color(0xFFA8C5F0),
+                            focusedContainerColor = if (state.weatherInfo?.isDay ?: true) DarkBlueSky else NightBlue,
+                            disabledContainerColor = if (state.weatherInfo?.isDay ?: true) DarkBlueSky else NightBlue,
+                            unfocusedContainerColor = if (state.weatherInfo?.isDay ?: true) DarkBlueSky else NightBlue,
                             focusedTextColor = Color.White,
                             unfocusedTextColor = Color.White,
                             focusedBorderColor = Color.White,
@@ -235,7 +235,7 @@ fun MainScreen(
                         Surface(
                             modifier = Modifier
                                 .fillMaxWidth(),
-                            color = if (state.weatherInfo?.isDay ?: true) LightBlueSky else LightNightBlue,
+                            color = if (state.weatherInfo?.isDay ?: true) DarkBlueSky else NightBlue,
                             tonalElevation = 8.dp
                         ) {
                             LazyColumn {
@@ -253,6 +253,9 @@ fun MainScreen(
                                                 color = Color.White.copy(alpha = 0.7f)
                                             )
                                         },
+                                        colors = ListItemDefaults.colors(
+                                            containerColor = if (state.weatherInfo?.isDay ?: true) DarkBlueSky else NightBlue
+                                        ),
                                         modifier = Modifier.clickable {
                                             searchQuery = ""
                                             showSearchResults = false
@@ -396,13 +399,13 @@ fun SavedCitiesList(
                     Text(
                         text = city.cityName,
                         color = Color.White
-                    ) 
+                    )
                 },
-                supportingContent = { 
+                supportingContent = {
                     Text(
                         text = city.state,
                         color = Color.White.copy(alpha = 0.7f)
-                    ) 
+                    )
                 },
                 trailingContent = {
                     IconButton(onClick = { onDeleteCity(city) }) {

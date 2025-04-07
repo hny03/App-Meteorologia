@@ -29,7 +29,7 @@
   {
     "city_id": "3385077",
     "city_name": "Conde",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.25972",
@@ -56,7 +56,7 @@
   {
     "city_id": "3385109",
     "city_name": "Viçosa",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.37139",
@@ -110,7 +110,7 @@
   {
     "city_id": "3385742",
     "city_name": "União dos Palmares",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.16278",
@@ -272,7 +272,7 @@
   {
     "city_id": "3387202",
     "city_name": "Sousa",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.75917",
@@ -290,7 +290,7 @@
   {
     "city_id": "3387266",
     "city_name": "Solânea",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.755",
@@ -344,7 +344,7 @@
   {
     "city_id": "3387987",
     "city_name": "Satuba",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.56333",
@@ -362,7 +362,7 @@
   {
     "city_id": "3388269",
     "city_name": "São Miguel dos Campos",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.78111",
@@ -389,7 +389,7 @@
   {
     "city_id": "3388341",
     "city_name": "São Luís do Quitunde",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.31833",
@@ -470,7 +470,7 @@
   {
     "city_id": "3388991",
     "city_name": "São Bento",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.28333",
@@ -488,7 +488,7 @@
   {
     "city_id": "3389321",
     "city_name": "Santa Rita",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.11389",
@@ -524,7 +524,7 @@
   {
     "city_id": "3389384",
     "city_name": "Santana do Ipanema",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.37833",
@@ -596,7 +596,7 @@
   {
     "city_id": "3390288",
     "city_name": "Rio Largo",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.47833",
@@ -659,7 +659,7 @@
   {
     "city_id": "3391397",
     "city_name": "Porto Calvo",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.045",
@@ -686,7 +686,7 @@
   {
     "city_id": "3391571",
     "city_name": "Pombal",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.77028",
@@ -731,7 +731,7 @@
   {
     "city_id": "3392126",
     "city_name": "Pilar",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.59722",
@@ -830,7 +830,7 @@
   {
     "city_id": "3392887",
     "city_name": "Patos",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.02444",
@@ -1019,7 +1019,7 @@
   {
     "city_id": "3394116",
     "city_name": "Murici",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.30667",
@@ -1046,7 +1046,7 @@
   {
     "city_id": "3394549",
     "city_name": "Monteiro",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.88944",
@@ -1109,7 +1109,7 @@
   {
     "city_id": "3395077",
     "city_name": "Matriz de Camaragibe",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.15167",
@@ -1118,7 +1118,7 @@
   {
     "city_id": "3395380",
     "city_name": "Mari",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.06",
@@ -1127,7 +1127,7 @@
   {
     "city_id": "3395395",
     "city_name": "Marechal Deodoro",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.71028",
@@ -1136,7 +1136,7 @@
   {
     "city_id": "3395458",
     "city_name": "Maragogi",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.01222",
@@ -1163,7 +1163,7 @@
   {
     "city_id": "3395717",
     "city_name": "Mamanguape",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.83861",
@@ -1172,7 +1172,7 @@
   {
     "city_id": "3395981",
     "city_name": "Maceió",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.66583",
@@ -1280,7 +1280,7 @@
   {
     "city_id": "3397277",
     "city_name": "João Pessoa",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.115",
@@ -1343,7 +1343,7 @@
   {
     "city_id": "3397898",
     "city_name": "Itaporanga",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.30444",
@@ -1406,7 +1406,7 @@
   {
     "city_id": "3398003",
     "city_name": "Itabaiana",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.32861",
@@ -1523,7 +1523,7 @@
   {
     "city_id": "3398570",
     "city_name": "Guarabira",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.85472",
@@ -1667,7 +1667,7 @@
   {
     "city_id": "3400752",
     "city_name": "Esperança",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.03306",
@@ -1703,7 +1703,7 @@
   {
     "city_id": "3401109",
     "city_name": "Delmiro Gouveia",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.38861",
@@ -1865,7 +1865,7 @@
   {
     "city_id": "3402465",
     "city_name": "Catolé do Rocha",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.34389",
@@ -1982,7 +1982,7 @@
   {
     "city_id": "3403611",
     "city_name": "Campo Alegre",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.78194",
@@ -1991,7 +1991,7 @@
   {
     "city_id": "3403642",
     "city_name": "Campina Grande",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.23056",
@@ -2018,7 +2018,7 @@
   {
     "city_id": "3403941",
     "city_name": "Cajueiro",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.71667",
@@ -2027,7 +2027,7 @@
   {
     "city_id": "3404020",
     "city_name": "Cajazeiras",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.89028",
@@ -2063,7 +2063,7 @@
   {
     "city_id": "3404558",
     "city_name": "Cabedelo",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.98111",
@@ -2171,7 +2171,7 @@
   {
     "city_id": "3405863",
     "city_name": "Belém",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-6.69167",
@@ -2198,7 +2198,7 @@
   {
     "city_id": "3405940",
     "city_name": "Bayeux",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.125",
@@ -2297,7 +2297,7 @@
   {
     "city_id": "3406996",
     "city_name": "Atalaia",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.50194",
@@ -2342,7 +2342,7 @@
   {
     "city_id": "3407327",
     "city_name": "Arapiraca",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.7525",
@@ -2351,7 +2351,7 @@
   {
     "city_id": "3407357",
     "city_name": "Araguaína",
-    "state_code": "31",
+    "state_code": "TO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.19111",
@@ -2441,7 +2441,7 @@
   {
     "city_id": "3408100",
     "city_name": "Alagoa Grande",
-    "state_code": "PB",
+    "state_code": "BA",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.15833",
@@ -2531,7 +2531,7 @@
   {
     "city_id": "3444848",
     "city_name": "Xanxerê",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.87694",
@@ -2540,7 +2540,7 @@
   {
     "city_id": "3444864",
     "city_name": "Votuporanga",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.42278",
@@ -2549,7 +2549,7 @@
   {
     "city_id": "3444866",
     "city_name": "Votorantim",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.54667",
@@ -2585,7 +2585,7 @@
   {
     "city_id": "3444969",
     "city_name": "Visconde do Rio Branco",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.01028",
@@ -2594,7 +2594,7 @@
   {
     "city_id": "3444997",
     "city_name": "Viradouro",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.87306",
@@ -2603,7 +2603,7 @@
   {
     "city_id": "3445014",
     "city_name": "Vinhedo",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.02972",
@@ -2621,7 +2621,7 @@
   {
     "city_id": "3445126",
     "city_name": "Videira",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.00833",
@@ -2630,7 +2630,7 @@
   {
     "city_id": "3445133",
     "city_name": "Viçosa",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.75389",
@@ -2657,7 +2657,7 @@
   {
     "city_id": "3445162",
     "city_name": "Vespasiano",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.69194",
@@ -2702,7 +2702,7 @@
   {
     "city_id": "3445418",
     "city_name": "Vazante",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.98694",
@@ -2720,7 +2720,7 @@
   {
     "city_id": "3445446",
     "city_name": "Várzea Paulista",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.21139",
@@ -2729,7 +2729,7 @@
   {
     "city_id": "3445451",
     "city_name": "Várzea Grande",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.64667",
@@ -2738,7 +2738,7 @@
   {
     "city_id": "3445459",
     "city_name": "Várzea da Palma",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.5976",
@@ -2747,7 +2747,7 @@
   {
     "city_id": "3445487",
     "city_name": "Varginha",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.55139",
@@ -2756,7 +2756,7 @@
   {
     "city_id": "3445500",
     "city_name": "Vargem Grande do Sul",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.83222",
@@ -2765,7 +2765,7 @@
   {
     "city_id": "3445575",
     "city_name": "Valparaíso",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.22778",
@@ -2774,7 +2774,7 @@
   {
     "city_id": "3445578",
     "city_name": "Valinhos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.97056",
@@ -2828,7 +2828,7 @@
   {
     "city_id": "3445713",
     "city_name": "Uruaçu",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-14.52472",
@@ -2846,7 +2846,7 @@
   {
     "city_id": "3445764",
     "city_name": "Unaí",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.3575",
@@ -2873,7 +2873,7 @@
   {
     "city_id": "3445831",
     "city_name": "Uberlândia",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.91861",
@@ -2882,7 +2882,7 @@
   {
     "city_id": "3445839",
     "city_name": "Uberaba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.74833",
@@ -2891,7 +2891,7 @@
   {
     "city_id": "3445847",
     "city_name": "Ubatuba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.43389",
@@ -2918,7 +2918,7 @@
   {
     "city_id": "3445859",
     "city_name": "Ubá",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.12",
@@ -2936,7 +2936,7 @@
   {
     "city_id": "3445941",
     "city_name": "Tupaciguara",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.59222",
@@ -2945,7 +2945,7 @@
   {
     "city_id": "3445942",
     "city_name": "Tupã",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.93472",
@@ -2963,7 +2963,7 @@
   {
     "city_id": "3445993",
     "city_name": "Tubarão",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.46667",
@@ -2972,7 +2972,7 @@
   {
     "city_id": "3446038",
     "city_name": "Trindade",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.64944",
@@ -2990,7 +2990,7 @@
   {
     "city_id": "3446077",
     "city_name": "Três Pontas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.36667",
@@ -3008,7 +3008,7 @@
   {
     "city_id": "3446098",
     "city_name": "Três Lagoas",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.78765",
@@ -3035,7 +3035,7 @@
   {
     "city_id": "3446138",
     "city_name": "Três Corações",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.69694",
@@ -3044,7 +3044,7 @@
   {
     "city_id": "3446194",
     "city_name": "Tremembé",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.95833",
@@ -3080,7 +3080,7 @@
   {
     "city_id": "3446400",
     "city_name": "Tobias Barreto",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-11.18389",
@@ -3089,7 +3089,7 @@
   {
     "city_id": "3446445",
     "city_name": "Timóteo",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.58106",
@@ -3098,7 +3098,7 @@
   {
     "city_id": "3446465",
     "city_name": "Timbó",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.82333",
@@ -3107,7 +3107,7 @@
   {
     "city_id": "3446500",
     "city_name": "Tijucas",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.24139",
@@ -3116,7 +3116,7 @@
   {
     "city_id": "3446539",
     "city_name": "Tietê",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.10194",
@@ -3143,7 +3143,7 @@
   {
     "city_id": "3446621",
     "city_name": "Teófilo Otoni",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.8575",
@@ -3152,7 +3152,7 @@
   {
     "city_id": "3446625",
     "city_name": "Teodoro Sampaio",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.5325",
@@ -3170,7 +3170,7 @@
   {
     "city_id": "3446682",
     "city_name": "Taubaté",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.02639",
@@ -3179,7 +3179,7 @@
   {
     "city_id": "3446692",
     "city_name": "Tatuí",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.35556",
@@ -3188,7 +3188,7 @@
   {
     "city_id": "3446752",
     "city_name": "Taquarituba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.53306",
@@ -3197,7 +3197,7 @@
   {
     "city_id": "3446753",
     "city_name": "Taquaritinga",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.40611",
@@ -3251,7 +3251,7 @@
   {
     "city_id": "3446979",
     "city_name": "Tanabi",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.62639",
@@ -3260,7 +3260,7 @@
   {
     "city_id": "3447005",
     "city_name": "Tambaú",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.705",
@@ -3269,7 +3269,7 @@
   {
     "city_id": "3447059",
     "city_name": "Taiobeiras",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.80778",
@@ -3278,7 +3278,7 @@
   {
     "city_id": "3447186",
     "city_name": "Taboão da Serra",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.62611",
@@ -3287,7 +3287,7 @@
   {
     "city_id": "3447212",
     "city_name": "Suzano",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.5425",
@@ -3296,7 +3296,7 @@
   {
     "city_id": "3447259",
     "city_name": "Sumaré",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.82194",
@@ -3305,7 +3305,7 @@
   {
     "city_id": "3447399",
     "city_name": "Sorocaba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.50167",
@@ -3323,7 +3323,7 @@
   {
     "city_id": "3447437",
     "city_name": "Socorro",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.59139",
@@ -3341,7 +3341,7 @@
   {
     "city_id": "3447562",
     "city_name": "Simão Dias",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.73833",
@@ -3359,7 +3359,7 @@
   {
     "city_id": "3447597",
     "city_name": "Sidrolândia",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.93194",
@@ -3368,7 +3368,7 @@
   {
     "city_id": "3447624",
     "city_name": "Sete Lagoas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.46583",
@@ -3377,7 +3377,7 @@
   {
     "city_id": "3447651",
     "city_name": "Sertãozinho",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.13778",
@@ -3395,7 +3395,7 @@
   {
     "city_id": "3447718",
     "city_name": "Serra Negra",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.61222",
@@ -3404,7 +3404,7 @@
   {
     "city_id": "3447720",
     "city_name": "Serrana",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.21139",
@@ -3440,7 +3440,7 @@
   {
     "city_id": "3447854",
     "city_name": "Senador Canedo",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.70806",
@@ -3458,7 +3458,7 @@
   {
     "city_id": "3447929",
     "city_name": "Schroeder",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.4125",
@@ -3476,7 +3476,7 @@
   {
     "city_id": "3447969",
     "city_name": "Sarzedo",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.03528",
@@ -3530,7 +3530,7 @@
   {
     "city_id": "3448136",
     "city_name": "São Vicente",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.96306",
@@ -3557,7 +3557,7 @@
   {
     "city_id": "3448221",
     "city_name": "São Sebastião do Paraíso",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.91694",
@@ -3575,7 +3575,7 @@
   {
     "city_id": "3448257",
     "city_name": "São Sebastião",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.76",
@@ -3584,7 +3584,7 @@
   {
     "city_id": "3448300",
     "city_name": "São Roque",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.52917",
@@ -3602,7 +3602,7 @@
   {
     "city_id": "3448403",
     "city_name": "São Pedro",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.54861",
@@ -3611,7 +3611,7 @@
   {
     "city_id": "3448439",
     "city_name": "São Paulo",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.5475",
@@ -3629,7 +3629,7 @@
   {
     "city_id": "3448455",
     "city_name": "São Miguel do Araguaia",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-13.275",
@@ -3665,7 +3665,7 @@
   {
     "city_id": "3448545",
     "city_name": "São Manuel",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.73111",
@@ -3683,7 +3683,7 @@
   {
     "city_id": "3448558",
     "city_name": "São Luís de Montes Belos",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.525",
@@ -3701,7 +3701,7 @@
   {
     "city_id": "3448616",
     "city_name": "São Lourenço",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.11639",
@@ -3728,7 +3728,7 @@
   {
     "city_id": "3448636",
     "city_name": "São José dos Campos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.17944",
@@ -3737,7 +3737,7 @@
   {
     "city_id": "3448639",
     "city_name": "São José do Rio Preto",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.81972",
@@ -3746,7 +3746,7 @@
   {
     "city_id": "3448640",
     "city_name": "São José do Rio Pardo",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.59556",
@@ -3755,7 +3755,7 @@
   {
     "city_id": "3448742",
     "city_name": "São José",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.21171",
@@ -3764,7 +3764,7 @@
   {
     "city_id": "3448825",
     "city_name": "São Joaquim da Barra",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.58139",
@@ -3773,7 +3773,7 @@
   {
     "city_id": "3448828",
     "city_name": "São Joaquim",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.29389",
@@ -3782,7 +3782,7 @@
   {
     "city_id": "3448846",
     "city_name": "São João Nepomuceno",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.54",
@@ -3800,7 +3800,7 @@
   {
     "city_id": "3448879",
     "city_name": "São João del Rei",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.13556",
@@ -3809,7 +3809,7 @@
   {
     "city_id": "3448902",
     "city_name": "São João da Boa Vista",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.96917",
@@ -3836,7 +3836,7 @@
   {
     "city_id": "3449053",
     "city_name": "São Gotardo",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.31111",
@@ -3845,7 +3845,7 @@
   {
     "city_id": "3449056",
     "city_name": "São Gonçalo do Sapucaí",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.89222",
@@ -3863,7 +3863,7 @@
   {
     "city_id": "3449112",
     "city_name": "São Francisco do Sul",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.24333",
@@ -3881,7 +3881,7 @@
   {
     "city_id": "3449176",
     "city_name": "São Francisco",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.94861",
@@ -3899,7 +3899,7 @@
   {
     "city_id": "3449310",
     "city_name": "São Cristóvão",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-11.01472",
@@ -3908,7 +3908,7 @@
   {
     "city_id": "3449319",
     "city_name": "São Carlos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.0175",
@@ -3917,7 +3917,7 @@
   {
     "city_id": "3449324",
     "city_name": "São Caetano do Sul",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.62306",
@@ -3935,7 +3935,7 @@
   {
     "city_id": "3449344",
     "city_name": "São Bernardo do Campo",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.69389",
@@ -3944,7 +3944,7 @@
   {
     "city_id": "3449350",
     "city_name": "São Bento do Sul",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.25028",
@@ -3953,7 +3953,7 @@
   {
     "city_id": "3449427",
     "city_name": "Santos Dumont",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.45667",
@@ -3962,7 +3962,7 @@
   {
     "city_id": "3449433",
     "city_name": "Santos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.96083",
@@ -3980,7 +3980,7 @@
   {
     "city_id": "3449500",
     "city_name": "Santo Antônio do Monte",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.08722",
@@ -3989,7 +3989,7 @@
   {
     "city_id": "3449516",
     "city_name": "Santo Antônio do Amparo",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.94639",
@@ -3998,7 +3998,7 @@
   {
     "city_id": "3449518",
     "city_name": "Santo Antônio de Posse",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.60611",
@@ -4043,7 +4043,7 @@
   {
     "city_id": "3449701",
     "city_name": "Santo André",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.66389",
@@ -4052,7 +4052,7 @@
   {
     "city_id": "3449707",
     "city_name": "Santo Anastácio",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.83833",
@@ -4061,7 +4061,7 @@
   {
     "city_id": "3449711",
     "city_name": "Santo Amaro da Imperatriz",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.68806",
@@ -4097,7 +4097,7 @@
   {
     "city_id": "3449793",
     "city_name": "Santa Rosa de Viterbo",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.47278",
@@ -4115,7 +4115,7 @@
   {
     "city_id": "3449847",
     "city_name": "Santa Rita do Sapucaí",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.25222",
@@ -4124,7 +4124,7 @@
   {
     "city_id": "3449851",
     "city_name": "Santa Rita do Passa Quatro",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.71028",
@@ -4133,7 +4133,7 @@
   {
     "city_id": "3449933",
     "city_name": "Santana do Paraíso",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.36361",
@@ -4151,7 +4151,7 @@
   {
     "city_id": "3449948",
     "city_name": "Santana de Parnaíba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.44417",
@@ -4178,7 +4178,7 @@
   {
     "city_id": "3450144",
     "city_name": "Santa Luzia",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.76972",
@@ -4196,7 +4196,7 @@
   {
     "city_id": "3450188",
     "city_name": "Santa Isabel",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.31556",
@@ -4205,7 +4205,7 @@
   {
     "city_id": "3450206",
     "city_name": "Santa Helena de Goiás",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.81361",
@@ -4214,7 +4214,7 @@
   {
     "city_id": "3450225",
     "city_name": "Santa Gertrudes",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.45667",
@@ -4223,7 +4223,7 @@
   {
     "city_id": "3450232",
     "city_name": "Santa Fé do Sul",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.21111",
@@ -4241,7 +4241,7 @@
   {
     "city_id": "3450272",
     "city_name": "Santa Cruz do Rio Pardo",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.89889",
@@ -4250,7 +4250,7 @@
   {
     "city_id": "3450283",
     "city_name": "Santa Cruz das Palmeiras",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.82694",
@@ -4259,7 +4259,7 @@
   {
     "city_id": "3450376",
     "city_name": "Santa Cecília",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.96083",
@@ -4268,7 +4268,7 @@
   {
     "city_id": "3450404",
     "city_name": "Santa Bárbara d'Oeste",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.75361",
@@ -4277,7 +4277,7 @@
   {
     "city_id": "3450563",
     "city_name": "Salto de Pirapora",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.64889",
@@ -4286,7 +4286,7 @@
   {
     "city_id": "3450594",
     "city_name": "Salto",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.20083",
@@ -4295,7 +4295,7 @@
   {
     "city_id": "3450671",
     "city_name": "Salinas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.17028",
@@ -4304,7 +4304,7 @@
   {
     "city_id": "3450759",
     "city_name": "Sacramento",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.86528",
@@ -4322,7 +4322,7 @@
   {
     "city_id": "3450843",
     "city_name": "Rubiataba",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.16444",
@@ -4340,7 +4340,7 @@
   {
     "city_id": "3450909",
     "city_name": "Rondonópolis",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.47083",
@@ -4367,7 +4367,7 @@
   {
     "city_id": "3451051",
     "city_name": "Rio Verde de Mato Grosso",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.91806",
@@ -4403,7 +4403,7 @@
   {
     "city_id": "3451124",
     "city_name": "Rio Negrinho",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.25444",
@@ -4412,7 +4412,7 @@
   {
     "city_id": "3451134",
     "city_name": "Rio Grande da Serra",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.74417",
@@ -4430,7 +4430,7 @@
   {
     "city_id": "3451152",
     "city_name": "Rio do Sul",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.21417",
@@ -4448,7 +4448,7 @@
   {
     "city_id": "3451202",
     "city_name": "Rio das Pedras",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.84333",
@@ -4466,7 +4466,7 @@
   {
     "city_id": "3451234",
     "city_name": "Rio Claro",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.41139",
@@ -4475,7 +4475,7 @@
   {
     "city_id": "3451241",
     "city_name": "Rio Brilhante",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.80194",
@@ -4502,7 +4502,7 @@
   {
     "city_id": "3451328",
     "city_name": "Ribeirão Preto",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.1775",
@@ -4511,7 +4511,7 @@
   {
     "city_id": "3451329",
     "city_name": "Ribeirão Pires",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.71056",
@@ -4520,7 +4520,7 @@
   {
     "city_id": "3451353",
     "city_name": "Ribeirão das Neves",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.76694",
@@ -4529,7 +4529,7 @@
   {
     "city_id": "3451357",
     "city_name": "Ribeirão da Ilha",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.69934",
@@ -4556,7 +4556,7 @@
   {
     "city_id": "3451650",
     "city_name": "Resplendor",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.32556",
@@ -4574,7 +4574,7 @@
   {
     "city_id": "3451704",
     "city_name": "Registro",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.4875",
@@ -4583,7 +4583,7 @@
   {
     "city_id": "3451709",
     "city_name": "Regente Feijó",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.22139",
@@ -4592,7 +4592,7 @@
   {
     "city_id": "3451856",
     "city_name": "Rancharia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.22917",
@@ -4601,7 +4601,7 @@
   {
     "city_id": "3451931",
     "city_name": "Quirinópolis",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.44833",
@@ -4646,7 +4646,7 @@
   {
     "city_id": "3452233",
     "city_name": "Propriá",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.21111",
@@ -4655,7 +4655,7 @@
   {
     "city_id": "3452237",
     "city_name": "Promissão",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.53667",
@@ -4664,7 +4664,7 @@
   {
     "city_id": "3452320",
     "city_name": "Presidente Venceslau",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.87611",
@@ -4673,7 +4673,7 @@
   {
     "city_id": "3452324",
     "city_name": "Presidente Prudente",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.12556",
@@ -4682,7 +4682,7 @@
   {
     "city_id": "3452331",
     "city_name": "Presidente Epitácio",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.76333",
@@ -4691,7 +4691,7 @@
   {
     "city_id": "3452440",
     "city_name": "Prata",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.30722",
@@ -4700,7 +4700,7 @@
   {
     "city_id": "3452465",
     "city_name": "Praia Grande",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.00583",
@@ -4718,7 +4718,7 @@
   {
     "city_id": "3452525",
     "city_name": "Pouso Alegre",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.23",
@@ -4727,7 +4727,7 @@
   {
     "city_id": "3452599",
     "city_name": "Posse",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-14.09306",
@@ -4736,7 +4736,7 @@
   {
     "city_id": "3452623",
     "city_name": "Porto União",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.23806",
@@ -4754,7 +4754,7 @@
   {
     "city_id": "3452775",
     "city_name": "Porto Ferreira",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.85389",
@@ -4763,7 +4763,7 @@
   {
     "city_id": "3452779",
     "city_name": "Porto Feliz",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.21472",
@@ -4790,7 +4790,7 @@
   {
     "city_id": "3453014",
     "city_name": "Porangatu",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-13.44083",
@@ -4799,7 +4799,7 @@
   {
     "city_id": "3453060",
     "city_name": "Pontes e Lacerda",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.22611",
@@ -4808,7 +4808,7 @@
   {
     "city_id": "3453078",
     "city_name": "Ponte Nova",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.41639",
@@ -4817,7 +4817,7 @@
   {
     "city_id": "3453150",
     "city_name": "Ponta Porã",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.53611",
@@ -4826,7 +4826,7 @@
   {
     "city_id": "3453171",
     "city_name": "Pontal",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.0225",
@@ -4844,7 +4844,7 @@
   {
     "city_id": "3453240",
     "city_name": "Pompéu",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.22444",
@@ -4853,7 +4853,7 @@
   {
     "city_id": "3453242",
     "city_name": "Pompéia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.10861",
@@ -4862,7 +4862,7 @@
   {
     "city_id": "3453245",
     "city_name": "Pomerode",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.74056",
@@ -4871,7 +4871,7 @@
   {
     "city_id": "3453303",
     "city_name": "Poços de Caldas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.78778",
@@ -4880,7 +4880,7 @@
   {
     "city_id": "3453315",
     "city_name": "Poconé",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.25667",
@@ -4898,7 +4898,7 @@
   {
     "city_id": "3453406",
     "city_name": "Poá",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.52806",
@@ -4907,7 +4907,7 @@
   {
     "city_id": "3453420",
     "city_name": "Planaltina",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.45278",
@@ -4925,7 +4925,7 @@
   {
     "city_id": "3453439",
     "city_name": "Piuí",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.46528",
@@ -4934,7 +4934,7 @@
   {
     "city_id": "3453457",
     "city_name": "Pitangui",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.68278",
@@ -4943,7 +4943,7 @@
   {
     "city_id": "3453467",
     "city_name": "Pitangueiras",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.00944",
@@ -4970,7 +4970,7 @@
   {
     "city_id": "3453503",
     "city_name": "Pires do Rio",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.29972",
@@ -4988,7 +4988,7 @@
   {
     "city_id": "3453542",
     "city_name": "Pirapozinho",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.27528",
@@ -4997,7 +4997,7 @@
   {
     "city_id": "3453546",
     "city_name": "Pirapora",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.345",
@@ -5006,7 +5006,7 @@
   {
     "city_id": "3453605",
     "city_name": "Pirajuí",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.99861",
@@ -5015,7 +5015,7 @@
   {
     "city_id": "3453610",
     "city_name": "Piraju",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.19361",
@@ -5042,7 +5042,7 @@
   {
     "city_id": "3453639",
     "city_name": "Pirassununga",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.99611",
@@ -5051,7 +5051,7 @@
   {
     "city_id": "3453643",
     "city_name": "Piracicaba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.72528",
@@ -5060,7 +5060,7 @@
   {
     "city_id": "3453659",
     "city_name": "Piracanjuba",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.30278",
@@ -5069,7 +5069,7 @@
   {
     "city_id": "3453661",
     "city_name": "Piracaia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.05389",
@@ -5096,7 +5096,7 @@
   {
     "city_id": "3453807",
     "city_name": "Espírito Santo do Pinhal",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.11583",
@@ -5114,7 +5114,7 @@
   {
     "city_id": "3453837",
     "city_name": "Pindamonhangaba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.92389",
@@ -5123,7 +5123,7 @@
   {
     "city_id": "3453896",
     "city_name": "Pilar do Sul",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.81306",
@@ -5132,7 +5132,7 @@
   {
     "city_id": "3453926",
     "city_name": "Piedade",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.71194",
@@ -5150,7 +5150,7 @@
   {
     "city_id": "3454061",
     "city_name": "Peruíbe",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.32",
@@ -5159,7 +5159,7 @@
   {
     "city_id": "3454131",
     "city_name": "Pereira Barreto",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.63833",
@@ -5168,7 +5168,7 @@
   {
     "city_id": "3454139",
     "city_name": "Perdões",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.09083",
@@ -5177,7 +5177,7 @@
   {
     "city_id": "3454213",
     "city_name": "Penha",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.76944",
@@ -5186,7 +5186,7 @@
   {
     "city_id": "3454231",
     "city_name": "Penedo",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.29028",
@@ -5195,7 +5195,7 @@
   {
     "city_id": "3454235",
     "city_name": "Penápolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.41972",
@@ -5213,7 +5213,7 @@
   {
     "city_id": "3454358",
     "city_name": "Pedro Leopoldo",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.61806",
@@ -5222,7 +5222,7 @@
   {
     "city_id": "3454407",
     "city_name": "Pedreira",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.74194",
@@ -5231,7 +5231,7 @@
   {
     "city_id": "3454578",
     "city_name": "Pedra Azul",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.00528",
@@ -5240,7 +5240,7 @@
   {
     "city_id": "3454620",
     "city_name": "Pederneiras",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.35167",
@@ -5249,7 +5249,7 @@
   {
     "city_id": "3454690",
     "city_name": "Paulínia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.76111",
@@ -5258,7 +5258,7 @@
   {
     "city_id": "3454763",
     "city_name": "Patrocínio",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.94389",
@@ -5267,7 +5267,7 @@
   {
     "city_id": "3454783",
     "city_name": "Patos de Minas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.57889",
@@ -5294,7 +5294,7 @@
   {
     "city_id": "3454847",
     "city_name": "Passos",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.71889",
@@ -5339,7 +5339,7 @@
   {
     "city_id": "3455061",
     "city_name": "Paranapanema",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.3863",
@@ -5348,7 +5348,7 @@
   {
     "city_id": "3455065",
     "city_name": "Paranaíba",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.67722",
@@ -5375,7 +5375,7 @@
   {
     "city_id": "3455152",
     "city_name": "Paraguaçu Paulista",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.41278",
@@ -5384,7 +5384,7 @@
   {
     "city_id": "3455155",
     "city_name": "Paraguaçu",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.54722",
@@ -5393,7 +5393,7 @@
   {
     "city_id": "3455161",
     "city_name": "Pará de Minas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.86028",
@@ -5402,7 +5402,7 @@
   {
     "city_id": "3455168",
     "city_name": "Paracatu",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.22222",
@@ -5438,7 +5438,7 @@
   {
     "city_id": "3455342",
     "city_name": "Palmital",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.78889",
@@ -5474,7 +5474,7 @@
   {
     "city_id": "3455478",
     "city_name": "Palhoça",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.64528",
@@ -5492,7 +5492,7 @@
   {
     "city_id": "3455580",
     "city_name": "Padre Bernardo",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.16595",
@@ -5501,7 +5501,7 @@
   {
     "city_id": "3455671",
     "city_name": "Ouro Preto",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.39484",
@@ -5510,7 +5510,7 @@
   {
     "city_id": "3455689",
     "city_name": "Ouro Branco",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.52334",
@@ -5519,7 +5519,7 @@
   {
     "city_id": "3455729",
     "city_name": "Ourinhos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.97889",
@@ -5528,7 +5528,7 @@
   {
     "city_id": "3455756",
     "city_name": "Osvaldo Cruz",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.79667",
@@ -5546,7 +5546,7 @@
   {
     "city_id": "3455775",
     "city_name": "Osasco",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.5325",
@@ -5555,7 +5555,7 @@
   {
     "city_id": "3455784",
     "city_name": "Orleans",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.35889",
@@ -5564,7 +5564,7 @@
   {
     "city_id": "3455785",
     "city_name": "Orlândia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.72028",
@@ -5573,7 +5573,7 @@
   {
     "city_id": "3455908",
     "city_name": "Oliveira",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.69639",
@@ -5582,7 +5582,7 @@
   {
     "city_id": "3455923",
     "city_name": "Olímpia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.73722",
@@ -5591,7 +5591,7 @@
   {
     "city_id": "3456060",
     "city_name": "Novo Horizonte",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.46806",
@@ -5645,7 +5645,7 @@
   {
     "city_id": "3456137",
     "city_name": "Nova Olímpia",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-14.79722",
@@ -5654,7 +5654,7 @@
   {
     "city_id": "3456138",
     "city_name": "Nova Odessa",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.7775",
@@ -5663,7 +5663,7 @@
   {
     "city_id": "3456147",
     "city_name": "Nova Lima",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.98556",
@@ -5681,7 +5681,7 @@
   {
     "city_id": "3456164",
     "city_name": "Nova Granada",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.53389",
@@ -5699,7 +5699,7 @@
   {
     "city_id": "3456176",
     "city_name": "Nova Era",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.75",
@@ -5708,7 +5708,7 @@
   {
     "city_id": "3456223",
     "city_name": "Nossa Senhora do Socorro",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.855",
@@ -5717,7 +5717,7 @@
   {
     "city_id": "3456240",
     "city_name": "Nossa Senhora da Glória",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.21833",
@@ -5735,7 +5735,7 @@
   {
     "city_id": "3456285",
     "city_name": "Niquelândia",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-14.47389",
@@ -5753,7 +5753,7 @@
   {
     "city_id": "3456322",
     "city_name": "Nerópolis",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.40639",
@@ -5762,7 +5762,7 @@
   {
     "city_id": "3456324",
     "city_name": "Nepomuceno",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.23342",
@@ -5780,7 +5780,7 @@
   {
     "city_id": "3456368",
     "city_name": "Naviraí",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.065",
@@ -5789,7 +5789,7 @@
   {
     "city_id": "3456370",
     "city_name": "Navegantes",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.89889",
@@ -5798,7 +5798,7 @@
   {
     "city_id": "3456398",
     "city_name": "Nanuque",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.83917",
@@ -5807,7 +5807,7 @@
   {
     "city_id": "3456412",
     "city_name": "Muzambinho",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.37583",
@@ -5825,7 +5825,7 @@
   {
     "city_id": "3456500",
     "city_name": "Muriaé",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.13056",
@@ -5852,7 +5852,7 @@
   {
     "city_id": "3456724",
     "city_name": "Morro Agudo",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.73139",
@@ -5861,7 +5861,7 @@
   {
     "city_id": "3456735",
     "city_name": "Morrinhos",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.73111",
@@ -5870,7 +5870,7 @@
   {
     "city_id": "3456814",
     "city_name": "Montes Claros",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.735",
@@ -5879,7 +5879,7 @@
   {
     "city_id": "3456816",
     "city_name": "Monte Santo de Minas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.18972",
@@ -5897,7 +5897,7 @@
   {
     "city_id": "3456827",
     "city_name": "Monte Mor",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.94667",
@@ -5906,7 +5906,7 @@
   {
     "city_id": "3456848",
     "city_name": "Monte Carmelo",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.72472",
@@ -5915,7 +5915,7 @@
   {
     "city_id": "3456863",
     "city_name": "Monte Azul Paulista",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.90722",
@@ -5924,7 +5924,7 @@
   {
     "city_id": "3456866",
     "city_name": "Monte Aprazível",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.7725",
@@ -5933,7 +5933,7 @@
   {
     "city_id": "3456873",
     "city_name": "Monte Alto",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.26111",
@@ -5942,7 +5942,7 @@
   {
     "city_id": "3456944",
     "city_name": "Mongaguá",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.09306",
@@ -5951,7 +5951,7 @@
   {
     "city_id": "3456998",
     "city_name": "Mogi Mirim",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.43194",
@@ -5960,7 +5960,7 @@
   {
     "city_id": "3457000",
     "city_name": "Mogi Guaçu",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.3677",
@@ -5969,7 +5969,7 @@
   {
     "city_id": "3457001",
     "city_name": "Mogi das Cruzes",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.52278",
@@ -5978,7 +5978,7 @@
   {
     "city_id": "3457025",
     "city_name": "Mococa",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.46778",
@@ -5987,7 +5987,7 @@
   {
     "city_id": "3457107",
     "city_name": "Mirandopólis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.13361",
@@ -6005,7 +6005,7 @@
   {
     "city_id": "3457147",
     "city_name": "Mineiros",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.56944",
@@ -6023,7 +6023,7 @@
   {
     "city_id": "3457192",
     "city_name": "Miguelópolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.17944",
@@ -6059,7 +6059,7 @@
   {
     "city_id": "3457381",
     "city_name": "Mauá",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.66778",
@@ -6068,7 +6068,7 @@
   {
     "city_id": "3457393",
     "city_name": "Matozinhos",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.55778",
@@ -6077,7 +6077,7 @@
   {
     "city_id": "3457484",
     "city_name": "Mateus Leme",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.98639",
@@ -6086,7 +6086,7 @@
   {
     "city_id": "3457509",
     "city_name": "Matão",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.60333",
@@ -6113,7 +6113,7 @@
   {
     "city_id": "3457595",
     "city_name": "Martinópolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.14583",
@@ -6131,7 +6131,7 @@
   {
     "city_id": "3457692",
     "city_name": "Marília",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.21389",
@@ -6149,7 +6149,7 @@
   {
     "city_id": "3457736",
     "city_name": "Mariana",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.37778",
@@ -6212,7 +6212,7 @@
   {
     "city_id": "3457859",
     "city_name": "Maracaju",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.61444",
@@ -6221,7 +6221,7 @@
   {
     "city_id": "3457950",
     "city_name": "Manhumirim",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.35778",
@@ -6230,7 +6230,7 @@
   {
     "city_id": "3457952",
     "city_name": "Manhuaçu",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.25806",
@@ -6257,7 +6257,7 @@
   {
     "city_id": "3458131",
     "city_name": "Mairiporã",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.31861",
@@ -6266,7 +6266,7 @@
   {
     "city_id": "3458132",
     "city_name": "Mairinque",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.54583",
@@ -6275,7 +6275,7 @@
   {
     "city_id": "3458147",
     "city_name": "Mafra",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.11139",
@@ -6284,7 +6284,7 @@
   {
     "city_id": "3458211",
     "city_name": "Machado",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.67472",
@@ -6293,7 +6293,7 @@
   {
     "city_id": "3458245",
     "city_name": "Macatuba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.50222",
@@ -6311,7 +6311,7 @@
   {
     "city_id": "3458329",
     "city_name": "Luziânia",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.2525",
@@ -6320,7 +6320,7 @@
   {
     "city_id": "3458397",
     "city_name": "Lucas",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.33333",
@@ -6329,7 +6329,7 @@
   {
     "city_id": "3458406",
     "city_name": "Louveira",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.08639",
@@ -6338,7 +6338,7 @@
   {
     "city_id": "3458425",
     "city_name": "Lorena",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.73083",
@@ -6374,7 +6374,7 @@
   {
     "city_id": "3458494",
     "city_name": "Lins",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.67861",
@@ -6392,7 +6392,7 @@
   {
     "city_id": "3458575",
     "city_name": "Limeira",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.56472",
@@ -6401,7 +6401,7 @@
   {
     "city_id": "3458632",
     "city_name": "Leopoldina",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.53194",
@@ -6410,7 +6410,7 @@
   {
     "city_id": "3458645",
     "city_name": "Lençóis Paulista",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.59861",
@@ -6419,7 +6419,7 @@
   {
     "city_id": "3458662",
     "city_name": "Leme",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.18556",
@@ -6428,7 +6428,7 @@
   {
     "city_id": "3458696",
     "city_name": "Lavras",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.24528",
@@ -6446,7 +6446,7 @@
   {
     "city_id": "3458778",
     "city_name": "Laranjeiras",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.80639",
@@ -6455,7 +6455,7 @@
   {
     "city_id": "3458786",
     "city_name": "Laranjal Paulista",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.04972",
@@ -6473,7 +6473,7 @@
   {
     "city_id": "3458902",
     "city_name": "Lajinha",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.15139",
@@ -6482,7 +6482,7 @@
   {
     "city_id": "3458930",
     "city_name": "Lages",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.81611",
@@ -6500,7 +6500,7 @@
   {
     "city_id": "3459094",
     "city_name": "Laguna",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.4825",
@@ -6518,7 +6518,7 @@
   {
     "city_id": "3459138",
     "city_name": "Lagoa Santa",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.63006",
@@ -6527,7 +6527,7 @@
   {
     "city_id": "3459251",
     "city_name": "Lagoa da Prata",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.0225",
@@ -6536,7 +6536,7 @@
   {
     "city_id": "3459342",
     "city_name": "Lagarto",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.91722",
@@ -6545,7 +6545,7 @@
   {
     "city_id": "3459352",
     "city_name": "Ladário",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.00472",
@@ -6554,7 +6554,7 @@
   {
     "city_id": "3459462",
     "city_name": "Jundiaí",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.18639",
@@ -6572,7 +6572,7 @@
   {
     "city_id": "3459505",
     "city_name": "Juiz de Fora",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.76417",
@@ -6581,7 +6581,7 @@
   {
     "city_id": "3459550",
     "city_name": "Juatuba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.95194",
@@ -6590,7 +6590,7 @@
   {
     "city_id": "3459667",
     "city_name": "José Bonifácio",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.05278",
@@ -6599,7 +6599,7 @@
   {
     "city_id": "3459712",
     "city_name": "Joinville",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.30444",
@@ -6608,7 +6608,7 @@
   {
     "city_id": "3459785",
     "city_name": "João Pinheiro",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.7425",
@@ -6617,7 +6617,7 @@
   {
     "city_id": "3459796",
     "city_name": "João Monlevade",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.81",
@@ -6626,7 +6626,7 @@
   {
     "city_id": "3459869",
     "city_name": "Joaçaba",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.17806",
@@ -6644,7 +6644,7 @@
   {
     "city_id": "3459925",
     "city_name": "Jequitinhonha",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.43389",
@@ -6662,7 +6662,7 @@
   {
     "city_id": "3460005",
     "city_name": "Jaú",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.29639",
@@ -6671,7 +6671,7 @@
   {
     "city_id": "3460064",
     "city_name": "Jataí",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.87939",
@@ -6680,7 +6680,7 @@
   {
     "city_id": "3460068",
     "city_name": "Jarinu",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.10139",
@@ -6689,7 +6689,7 @@
   {
     "city_id": "3460071",
     "city_name": "Jardinópolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.01778",
@@ -6698,7 +6698,7 @@
   {
     "city_id": "3460087",
     "city_name": "Jardim",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.48028",
@@ -6707,7 +6707,7 @@
   {
     "city_id": "3460102",
     "city_name": "Jaraguá do Sul",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.48611",
@@ -6716,7 +6716,7 @@
   {
     "city_id": "3460107",
     "city_name": "Jaraguá",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.75694",
@@ -6734,7 +6734,7 @@
   {
     "city_id": "3460148",
     "city_name": "Januária",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.48866",
@@ -6743,7 +6743,7 @@
   {
     "city_id": "3460170",
     "city_name": "Jandira",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.5275",
@@ -6761,7 +6761,7 @@
   {
     "city_id": "3460174",
     "city_name": "Janaúba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.8025",
@@ -6770,7 +6770,7 @@
   {
     "city_id": "3460186",
     "city_name": "Jales",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.26889",
@@ -6779,7 +6779,7 @@
   {
     "city_id": "3460200",
     "city_name": "Jaguariúna",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.70556",
@@ -6824,7 +6824,7 @@
   {
     "city_id": "3460267",
     "city_name": "Jacutinga",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.28556",
@@ -6842,7 +6842,7 @@
   {
     "city_id": "3460355",
     "city_name": "Jaciara",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.96528",
@@ -6860,7 +6860,7 @@
   {
     "city_id": "3460370",
     "city_name": "Jacareí",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.30528",
@@ -6869,7 +6869,7 @@
   {
     "city_id": "3460441",
     "city_name": "Jaboticabal",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.25472",
@@ -6887,7 +6887,7 @@
   {
     "city_id": "3460511",
     "city_name": "Ituverava",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.33944",
@@ -6896,7 +6896,7 @@
   {
     "city_id": "3460513",
     "city_name": "Iturama",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.72806",
@@ -6905,7 +6905,7 @@
   {
     "city_id": "3460516",
     "city_name": "Itupeva",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.15306",
@@ -6914,7 +6914,7 @@
   {
     "city_id": "3460522",
     "city_name": "Itumbiara",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.41917",
@@ -6923,7 +6923,7 @@
   {
     "city_id": "3460523",
     "city_name": "Ituiutaba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.97428",
@@ -6941,7 +6941,7 @@
   {
     "city_id": "3460535",
     "city_name": "Itu",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.26417",
@@ -6959,7 +6959,7 @@
   {
     "city_id": "3460584",
     "city_name": "Itaúna",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.07528",
@@ -6968,7 +6968,7 @@
   {
     "city_id": "3460594",
     "city_name": "Itatinga",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.10167",
@@ -6977,7 +6977,7 @@
   {
     "city_id": "3460598",
     "city_name": "Itatiba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.00583",
@@ -6986,7 +6986,7 @@
   {
     "city_id": "3460620",
     "city_name": "Itararé",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.1125",
@@ -7004,7 +7004,7 @@
   {
     "city_id": "3460644",
     "city_name": "Itaquaquecetuba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.48611",
@@ -7013,7 +7013,7 @@
   {
     "city_id": "3460648",
     "city_name": "Itapuranga",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.56222",
@@ -7022,7 +7022,7 @@
   {
     "city_id": "3460671",
     "city_name": "Itápolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.59556",
@@ -7031,7 +7031,7 @@
   {
     "city_id": "3460699",
     "city_name": "Itapira",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.43611",
@@ -7040,7 +7040,7 @@
   {
     "city_id": "3460718",
     "city_name": "Itapevi",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.54889",
@@ -7049,7 +7049,7 @@
   {
     "city_id": "3460723",
     "city_name": "Itapeva",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.98222",
@@ -7058,7 +7058,7 @@
   {
     "city_id": "3460728",
     "city_name": "Itapetininga",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.59167",
@@ -7103,7 +7103,7 @@
   {
     "city_id": "3460740",
     "city_name": "Itapema",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.09028",
@@ -7112,7 +7112,7 @@
   {
     "city_id": "3460748",
     "city_name": "Itapecerica da Serra",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.71694",
@@ -7121,7 +7121,7 @@
   {
     "city_id": "3460752",
     "city_name": "Itapecerica",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.4725",
@@ -7139,7 +7139,7 @@
   {
     "city_id": "3460773",
     "city_name": "Itapaci",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-14.95083",
@@ -7157,7 +7157,7 @@
   {
     "city_id": "3460791",
     "city_name": "Itanhaém",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.18306",
@@ -7175,7 +7175,7 @@
   {
     "city_id": "3460825",
     "city_name": "Itamarandiba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.85722",
@@ -7202,7 +7202,7 @@
   {
     "city_id": "3460834",
     "city_name": "Itajubá",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.42556",
@@ -7211,7 +7211,7 @@
   {
     "city_id": "3460845",
     "city_name": "Itajaí",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.90778",
@@ -7220,7 +7220,7 @@
   {
     "city_id": "3460887",
     "city_name": "Itaí",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.41778",
@@ -7256,7 +7256,7 @@
   {
     "city_id": "3460954",
     "city_name": "Itabirito",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.25333",
@@ -7265,7 +7265,7 @@
   {
     "city_id": "3460960",
     "city_name": "Itabira",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.61917",
@@ -7274,7 +7274,7 @@
   {
     "city_id": "3460963",
     "city_name": "Itaberaí",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.02028",
@@ -7292,7 +7292,7 @@
   {
     "city_id": "3460971",
     "city_name": "Itabaianinha",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-11.27389",
@@ -7301,7 +7301,7 @@
   {
     "city_id": "3460974",
     "city_name": "Itabaiana",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.685",
@@ -7328,7 +7328,7 @@
   {
     "city_id": "3461055",
     "city_name": "Iracemápolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.58056",
@@ -7337,7 +7337,7 @@
   {
     "city_id": "3461090",
     "city_name": "Iporá",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.44194",
@@ -7364,7 +7364,7 @@
   {
     "city_id": "3461134",
     "city_name": "Iperó",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.35028",
@@ -7373,7 +7373,7 @@
   {
     "city_id": "3461144",
     "city_name": "Ipatinga",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.46833",
@@ -7382,7 +7382,7 @@
   {
     "city_id": "3461151",
     "city_name": "Ipameri",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.72194",
@@ -7391,7 +7391,7 @@
   {
     "city_id": "3461153",
     "city_name": "Ipaba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.41361",
@@ -7400,7 +7400,7 @@
   {
     "city_id": "3461194",
     "city_name": "Inhumas",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.35778",
@@ -7409,7 +7409,7 @@
   {
     "city_id": "3461311",
     "city_name": "Indaiatuba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.08842",
@@ -7418,7 +7418,7 @@
   {
     "city_id": "3461316",
     "city_name": "Indaial",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.89778",
@@ -7436,7 +7436,7 @@
   {
     "city_id": "3461370",
     "city_name": "Imbituba",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.24",
@@ -7445,7 +7445,7 @@
   {
     "city_id": "3461411",
     "city_name": "Ilha Solteira",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.43278",
@@ -7463,7 +7463,7 @@
   {
     "city_id": "3461465",
     "city_name": "Iguape",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.70806",
@@ -7481,7 +7481,7 @@
   {
     "city_id": "3461498",
     "city_name": "Igarapé",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.07028",
@@ -7490,7 +7490,7 @@
   {
     "city_id": "3461499",
     "city_name": "Igarapava",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.03833",
@@ -7499,7 +7499,7 @@
   {
     "city_id": "3461501",
     "city_name": "Igaraçu do Tietê",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.50917",
@@ -7508,7 +7508,7 @@
   {
     "city_id": "3461519",
     "city_name": "Içara",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.71333",
@@ -7526,7 +7526,7 @@
   {
     "city_id": "3461528",
     "city_name": "Ibiúna",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.65639",
@@ -7535,7 +7535,7 @@
   {
     "city_id": "3461550",
     "city_name": "Ibitinga",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.75778",
@@ -7544,7 +7544,7 @@
   {
     "city_id": "3461563",
     "city_name": "Ibirité",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.02194",
@@ -7562,7 +7562,7 @@
   {
     "city_id": "3461576",
     "city_name": "Ibirama",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.05694",
@@ -7589,7 +7589,7 @@
   {
     "city_id": "3461620",
     "city_name": "Ibiá",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.47833",
@@ -7598,7 +7598,7 @@
   {
     "city_id": "3461625",
     "city_name": "Ibaté",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.95472",
@@ -7625,7 +7625,7 @@
   {
     "city_id": "3461655",
     "city_name": "Hortolândia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.85833",
@@ -7643,7 +7643,7 @@
   {
     "city_id": "3461724",
     "city_name": "Gurupi",
-    "state_code": "31",
+    "state_code": "TO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-11.72917",
@@ -7652,7 +7652,7 @@
   {
     "city_id": "3461763",
     "city_name": "Guaxupé",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.30528",
@@ -7661,7 +7661,7 @@
   {
     "city_id": "3461786",
     "city_name": "Guarulhos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.46278",
@@ -7670,7 +7670,7 @@
   {
     "city_id": "3461789",
     "city_name": "Guarujá",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.99306",
@@ -7679,7 +7679,7 @@
   {
     "city_id": "3461824",
     "city_name": "Guariba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.36",
@@ -7697,7 +7697,7 @@
   {
     "city_id": "3461859",
     "city_name": "Guaratinguetá",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.81639",
@@ -7706,7 +7706,7 @@
   {
     "city_id": "3461871",
     "city_name": "Guararema",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.415",
@@ -7715,7 +7715,7 @@
   {
     "city_id": "3461874",
     "city_name": "Guararapes",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.26083",
@@ -7742,7 +7742,7 @@
   {
     "city_id": "3461910",
     "city_name": "Guaranésia",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.29917",
@@ -7751,7 +7751,7 @@
   {
     "city_id": "3461914",
     "city_name": "Guaramirim",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.47306",
@@ -7760,7 +7760,7 @@
   {
     "city_id": "3461935",
     "city_name": "Guará",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.42833",
@@ -7787,7 +7787,7 @@
   {
     "city_id": "3461958",
     "city_name": "Guanhães",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.775",
@@ -7805,7 +7805,7 @@
   {
     "city_id": "3461995",
     "city_name": "Guaíra",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.31833",
@@ -7832,7 +7832,7 @@
   {
     "city_id": "3462315",
     "city_name": "Governador Valadares",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.85111",
@@ -7841,7 +7841,7 @@
   {
     "city_id": "3462371",
     "city_name": "Goiatuba",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.0125",
@@ -7850,7 +7850,7 @@
   {
     "city_id": "3462374",
     "city_name": "Goiás",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.93444",
@@ -7859,7 +7859,7 @@
   {
     "city_id": "3462376",
     "city_name": "Goianira",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.49611",
@@ -7868,7 +7868,7 @@
   {
     "city_id": "3462377",
     "city_name": "Goiânia",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.67861",
@@ -7877,7 +7877,7 @@
   {
     "city_id": "3462378",
     "city_name": "Goianésia",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.3175",
@@ -7886,7 +7886,7 @@
   {
     "city_id": "3462535",
     "city_name": "Gaspar",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.93139",
@@ -7904,7 +7904,7 @@
   {
     "city_id": "3462580",
     "city_name": "Garça",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.21056",
@@ -7922,7 +7922,7 @@
   {
     "city_id": "3462916",
     "city_name": "Frutal",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.02472",
@@ -7940,7 +7940,7 @@
   {
     "city_id": "3462964",
     "city_name": "Franco da Rocha",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.32167",
@@ -7949,7 +7949,7 @@
   {
     "city_id": "3462980",
     "city_name": "Francisco Morato",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.28167",
@@ -7967,7 +7967,7 @@
   {
     "city_id": "3463011",
     "city_name": "Franca",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.53861",
@@ -7985,7 +7985,7 @@
   {
     "city_id": "3463066",
     "city_name": "Forquilhinha",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.7475",
@@ -7994,7 +7994,7 @@
   {
     "city_id": "3463140",
     "city_name": "Formosa",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.53722",
@@ -8003,7 +8003,7 @@
   {
     "city_id": "3463174",
     "city_name": "Formiga",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.46444",
@@ -8012,7 +8012,7 @@
   {
     "city_id": "3463237",
     "city_name": "Florianópolis",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.59667",
@@ -8030,7 +8030,7 @@
   {
     "city_id": "3463422",
     "city_name": "Ferraz de Vasconcelos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.54083",
@@ -8039,7 +8039,7 @@
   {
     "city_id": "3463432",
     "city_name": "Fernandópolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.28389",
@@ -8102,7 +8102,7 @@
   {
     "city_id": "3463900",
     "city_name": "Estância",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-11.26833",
@@ -8120,7 +8120,7 @@
   {
     "city_id": "3463939",
     "city_name": "Espinosa",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-14.92611",
@@ -8129,7 +8129,7 @@
   {
     "city_id": "3464008",
     "city_name": "Esmeraldas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.7625",
@@ -8174,7 +8174,7 @@
   {
     "city_id": "3464304",
     "city_name": "Embu Guaçu",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.83222",
@@ -8183,7 +8183,7 @@
   {
     "city_id": "3464305",
     "city_name": "Embu",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.64889",
@@ -8192,7 +8192,7 @@
   {
     "city_id": "3464329",
     "city_name": "Elói Mendes",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.61",
@@ -8210,7 +8210,7 @@
   {
     "city_id": "3464460",
     "city_name": "Dourados",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.22111",
@@ -8237,7 +8237,7 @@
   {
     "city_id": "3464618",
     "city_name": "Dois Córregos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.36611",
@@ -8246,7 +8246,7 @@
   {
     "city_id": "3464688",
     "city_name": "Divinópolis",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.14355",
@@ -8255,7 +8255,7 @@
   {
     "city_id": "3464724",
     "city_name": "Diamantino",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-14.40861",
@@ -8264,7 +8264,7 @@
   {
     "city_id": "3464728",
     "city_name": "Diamantina",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.24692",
@@ -8273,7 +8273,7 @@
   {
     "city_id": "3464739",
     "city_name": "Diadema",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.68611",
@@ -8282,7 +8282,7 @@
   {
     "city_id": "3464809",
     "city_name": "Descalvado",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.90389",
@@ -8291,7 +8291,7 @@
   {
     "city_id": "3464891",
     "city_name": "Curvelo",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.75639",
@@ -8300,7 +8300,7 @@
   {
     "city_id": "3464974",
     "city_name": "Curitibanos",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.28278",
@@ -8318,7 +8318,7 @@
   {
     "city_id": "3465038",
     "city_name": "Cuiabá",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.59611",
@@ -8327,7 +8327,7 @@
   {
     "city_id": "3465059",
     "city_name": "Cubatão",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.895",
@@ -8345,7 +8345,7 @@
   {
     "city_id": "3465090",
     "city_name": "Cruzeiro",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.57316",
@@ -8372,7 +8372,7 @@
   {
     "city_id": "3465164",
     "city_name": "Cristalina",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.76769",
@@ -8381,7 +8381,7 @@
   {
     "city_id": "3465196",
     "city_name": "Criciúma",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.6775",
@@ -8390,7 +8390,7 @@
   {
     "city_id": "3465209",
     "city_name": "Cravinhos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.34028",
@@ -8399,7 +8399,7 @@
   {
     "city_id": "3465228",
     "city_name": "Coxim",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.50667",
@@ -8408,7 +8408,7 @@
   {
     "city_id": "3465284",
     "city_name": "Cotia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.60389",
@@ -8417,7 +8417,7 @@
   {
     "city_id": "3465320",
     "city_name": "Cosmópolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.64583",
@@ -8426,7 +8426,7 @@
   {
     "city_id": "3465329",
     "city_name": "Coruripe",
-    "state_code": "AL",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.12556",
@@ -8435,7 +8435,7 @@
   {
     "city_id": "3465342",
     "city_name": "Corumbá",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.00917",
@@ -8453,7 +8453,7 @@
   {
     "city_id": "3465476",
     "city_name": "Coronel Fabriciano",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.51861",
@@ -8462,7 +8462,7 @@
   {
     "city_id": "3465487",
     "city_name": "Coromandel",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.47333",
@@ -8480,7 +8480,7 @@
   {
     "city_id": "3465512",
     "city_name": "Corinto",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.38083",
@@ -8489,7 +8489,7 @@
   {
     "city_id": "3465524",
     "city_name": "Cordeirópolis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.48194",
@@ -8507,7 +8507,7 @@
   {
     "city_id": "3465624",
     "city_name": "Contagem",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.93167",
@@ -8516,7 +8516,7 @@
   {
     "city_id": "3465644",
     "city_name": "Conselheiro Lafaiete",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.66028",
@@ -8525,7 +8525,7 @@
   {
     "city_id": "3465671",
     "city_name": "Congonhas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.50525",
@@ -8543,7 +8543,7 @@
   {
     "city_id": "3465721",
     "city_name": "Concórdia",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.23417",
@@ -8552,7 +8552,7 @@
   {
     "city_id": "3465731",
     "city_name": "Conchal",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.33028",
@@ -8579,7 +8579,7 @@
   {
     "city_id": "3465764",
     "city_name": "Conceição das Alagoas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.91472",
@@ -8642,7 +8642,7 @@
   {
     "city_id": "3466062",
     "city_name": "Cláudio",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.44333",
@@ -8678,7 +8678,7 @@
   {
     "city_id": "3466296",
     "city_name": "Chapecó",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.09639",
@@ -8687,7 +8687,7 @@
   {
     "city_id": "3466429",
     "city_name": "Cerquilho",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.165",
@@ -8696,7 +8696,7 @@
   {
     "city_id": "3466436",
     "city_name": "Ceres",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.30833",
@@ -8705,7 +8705,7 @@
   {
     "city_id": "3466481",
     "city_name": "Celso Ramos",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.63444",
@@ -8723,7 +8723,7 @@
   {
     "city_id": "3466547",
     "city_name": "Caxambu",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.97722",
@@ -8741,7 +8741,7 @@
   {
     "city_id": "3466692",
     "city_name": "Catanduva",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.13778",
@@ -8750,7 +8750,7 @@
   {
     "city_id": "3466696",
     "city_name": "Catalão",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.16583",
@@ -8759,7 +8759,7 @@
   {
     "city_id": "3466698",
     "city_name": "Cataguases",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.38917",
@@ -8786,7 +8786,7 @@
   {
     "city_id": "3466750",
     "city_name": "Cassilândia",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.11333",
@@ -8813,7 +8813,7 @@
   {
     "city_id": "3466824",
     "city_name": "Casa Branca",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.77389",
@@ -8822,7 +8822,7 @@
   {
     "city_id": "3466902",
     "city_name": "Carmo do Paranaíba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.00083",
@@ -8831,7 +8831,7 @@
   {
     "city_id": "3466903",
     "city_name": "Carmo do Cajuru",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.18417",
@@ -8858,7 +8858,7 @@
   {
     "city_id": "3466988",
     "city_name": "Caratinga",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.78972",
@@ -8867,7 +8867,7 @@
   {
     "city_id": "3466998",
     "city_name": "Carapicuíba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.52272",
@@ -8876,7 +8876,7 @@
   {
     "city_id": "3467012",
     "city_name": "Carangola",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.73306",
@@ -8885,7 +8885,7 @@
   {
     "city_id": "3467026",
     "city_name": "Carandaí",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.95361",
@@ -8894,7 +8894,7 @@
   {
     "city_id": "3467081",
     "city_name": "Caraguatatuba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.62028",
@@ -8903,7 +8903,7 @@
   {
     "city_id": "3467197",
     "city_name": "Capivari",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.995",
@@ -8912,7 +8912,7 @@
   {
     "city_id": "3467261",
     "city_name": "Capinzal",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.34361",
@@ -8930,7 +8930,7 @@
   {
     "city_id": "3467305",
     "city_name": "Capelinha",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.69139",
@@ -8939,7 +8939,7 @@
   {
     "city_id": "3467319",
     "city_name": "Capela",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.50333",
@@ -8957,7 +8957,7 @@
   {
     "city_id": "3467371",
     "city_name": "Capâo Bonito",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.00583",
@@ -8966,7 +8966,7 @@
   {
     "city_id": "3467452",
     "city_name": "Canoinhas",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.17722",
@@ -9002,7 +9002,7 @@
   {
     "city_id": "3467542",
     "city_name": "Cândido Mota",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.74639",
@@ -9029,7 +9029,7 @@
   {
     "city_id": "3467673",
     "city_name": "Campo Verde",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.41667",
@@ -9038,7 +9038,7 @@
   {
     "city_id": "3467677",
     "city_name": "Campos Novos",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.40167",
@@ -9047,7 +9047,7 @@
   {
     "city_id": "3467680",
     "city_name": "Campos Gerais",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.235",
@@ -9056,7 +9056,7 @@
   {
     "city_id": "3467684",
     "city_name": "Campos do Jordão",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.73944",
@@ -9065,7 +9065,7 @@
   {
     "city_id": "3467687",
     "city_name": "Campos Belos",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-13.03667",
@@ -9101,7 +9101,7 @@
   {
     "city_id": "3467747",
     "city_name": "Campo Grande",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.44278",
@@ -9119,7 +9119,7 @@
   {
     "city_id": "3467796",
     "city_name": "Campo Belo",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.89722",
@@ -9128,7 +9128,7 @@
   {
     "city_id": "3467865",
     "city_name": "Campinas",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.90556",
@@ -9146,7 +9146,7 @@
   {
     "city_id": "3467956",
     "city_name": "Cambuí",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.61222",
@@ -9182,7 +9182,7 @@
   {
     "city_id": "3468023",
     "city_name": "Camanducaia",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.75528",
@@ -9200,7 +9200,7 @@
   {
     "city_id": "3468100",
     "city_name": "Caldas Novas",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.74431",
@@ -9209,7 +9209,7 @@
   {
     "city_id": "3468121",
     "city_name": "Cajuru",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.27528",
@@ -9218,7 +9218,7 @@
   {
     "city_id": "3468157",
     "city_name": "Cajati",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.73611",
@@ -9227,7 +9227,7 @@
   {
     "city_id": "3468158",
     "city_name": "Cajamar",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.35611",
@@ -9236,7 +9236,7 @@
   {
     "city_id": "3468215",
     "city_name": "Caieiras",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.36417",
@@ -9254,7 +9254,7 @@
   {
     "city_id": "3468327",
     "city_name": "Caeté",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.88",
@@ -9317,7 +9317,7 @@
   {
     "city_id": "3468562",
     "city_name": "Caçapava",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.10083",
@@ -9326,7 +9326,7 @@
   {
     "city_id": "3468570",
     "city_name": "Caçador",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.77528",
@@ -9335,7 +9335,7 @@
   {
     "city_id": "3468592",
     "city_name": "Cabreúva",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.3075",
@@ -9362,7 +9362,7 @@
   {
     "city_id": "3468720",
     "city_name": "Buritizeiro",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.35111",
@@ -9371,7 +9371,7 @@
   {
     "city_id": "3468732",
     "city_name": "Buritis",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.61778",
@@ -9380,7 +9380,7 @@
   {
     "city_id": "3468802",
     "city_name": "Buri",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.7975",
@@ -9398,7 +9398,7 @@
   {
     "city_id": "3468879",
     "city_name": "Brusque",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.09795",
@@ -9416,7 +9416,7 @@
   {
     "city_id": "3468894",
     "city_name": "Brumadinho",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.14333",
@@ -9425,7 +9425,7 @@
   {
     "city_id": "3468899",
     "city_name": "Brotas",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.28417",
@@ -9434,7 +9434,7 @@
   {
     "city_id": "3468902",
     "city_name": "Brodósqui",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.99139",
@@ -9443,7 +9443,7 @@
   {
     "city_id": "3469058",
     "city_name": "Brasília",
-    "state_code": "DF",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.77972",
@@ -9452,7 +9452,7 @@
   {
     "city_id": "3469092",
     "city_name": "Bragança Paulista",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.9527",
@@ -9461,7 +9461,7 @@
   {
     "city_id": "3469115",
     "city_name": "Braço do Norte",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.275",
@@ -9470,7 +9470,7 @@
   {
     "city_id": "3469136",
     "city_name": "Botucatu",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.88583",
@@ -9497,7 +9497,7 @@
   {
     "city_id": "3469516",
     "city_name": "Bom Despacho",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.73639",
@@ -9506,7 +9506,7 @@
   {
     "city_id": "3469540",
     "city_name": "Boituva",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.28333",
@@ -9515,7 +9515,7 @@
   {
     "city_id": "3469601",
     "city_name": "Bocaiúva",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-17.10778",
@@ -9524,7 +9524,7 @@
   {
     "city_id": "3469932",
     "city_name": "Boa Esperança",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.09",
@@ -9533,7 +9533,7 @@
   {
     "city_id": "3469968",
     "city_name": "Blumenau",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.91944",
@@ -9542,7 +9542,7 @@
   {
     "city_id": "3469984",
     "city_name": "Biritiba Mirim",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.5725",
@@ -9551,7 +9551,7 @@
   {
     "city_id": "3469989",
     "city_name": "Birigui",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.28861",
@@ -9560,7 +9560,7 @@
   {
     "city_id": "3470003",
     "city_name": "Biguaçu",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.49417",
@@ -9569,7 +9569,7 @@
   {
     "city_id": "3470044",
     "city_name": "Betim",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.96778",
@@ -9578,7 +9578,7 @@
   {
     "city_id": "3470052",
     "city_name": "Bertioga",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.85444",
@@ -9596,7 +9596,7 @@
   {
     "city_id": "3470117",
     "city_name": "Belo Oriente",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.22",
@@ -9605,7 +9605,7 @@
   {
     "city_id": "3470127",
     "city_name": "Belo Horizonte",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.92083",
@@ -9623,7 +9623,7 @@
   {
     "city_id": "3470177",
     "city_name": "Bela Vista",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.10889",
@@ -9632,7 +9632,7 @@
   {
     "city_id": "3470264",
     "city_name": "Bebedouro",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.94944",
@@ -9641,7 +9641,7 @@
   {
     "city_id": "3470279",
     "city_name": "Bauru",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.31472",
@@ -9650,7 +9650,7 @@
   {
     "city_id": "3470324",
     "city_name": "Batatais",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.89111",
@@ -9659,7 +9659,7 @@
   {
     "city_id": "3470341",
     "city_name": "Bastos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.92194",
@@ -9668,7 +9668,7 @@
   {
     "city_id": "3470353",
     "city_name": "Barueri",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.51056",
@@ -9677,7 +9677,7 @@
   {
     "city_id": "3470369",
     "city_name": "Barroso",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.18694",
@@ -9686,7 +9686,7 @@
   {
     "city_id": "3470428",
     "city_name": "Barrinha",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.19361",
@@ -9695,7 +9695,7 @@
   {
     "city_id": "3470451",
     "city_name": "Barretos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.55722",
@@ -9704,7 +9704,7 @@
   {
     "city_id": "3470470",
     "city_name": "Barreiro do Jaíba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.61532",
@@ -9731,7 +9731,7 @@
   {
     "city_id": "3470674",
     "city_name": "Barra dos Coqueiros",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.90889",
@@ -9749,7 +9749,7 @@
   {
     "city_id": "3470709",
     "city_name": "Barra do Garças",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.89",
@@ -9758,7 +9758,7 @@
   {
     "city_id": "3470718",
     "city_name": "Barra do Bugres",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.0725",
@@ -9776,7 +9776,7 @@
   {
     "city_id": "3470776",
     "city_name": "Barra Bonita",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.49472",
@@ -9794,7 +9794,7 @@
   {
     "city_id": "3470825",
     "city_name": "Bariri",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.07444",
@@ -9803,7 +9803,7 @@
   {
     "city_id": "3470858",
     "city_name": "Barbacena",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.22583",
@@ -9812,7 +9812,7 @@
   {
     "city_id": "3470878",
     "city_name": "Barão de Cocais",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.94583",
@@ -9830,7 +9830,7 @@
   {
     "city_id": "3471005",
     "city_name": "Bambuí",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.00639",
@@ -9839,7 +9839,7 @@
   {
     "city_id": "3471039",
     "city_name": "Balneário Camboriú",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.99056",
@@ -9866,7 +9866,7 @@
   {
     "city_id": "3471291",
     "city_name": "Avaré",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.09861",
@@ -9875,7 +9875,7 @@
   {
     "city_id": "3471335",
     "city_name": "Atibaia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.11694",
@@ -9893,7 +9893,7 @@
   {
     "city_id": "3471374",
     "city_name": "Assis",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.66167",
@@ -9902,7 +9902,7 @@
   {
     "city_id": "3471393",
     "city_name": "Arujá",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.39611",
@@ -9911,7 +9911,7 @@
   {
     "city_id": "3471395",
     "city_name": "Artur Nogueira",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.57306",
@@ -9956,7 +9956,7 @@
   {
     "city_id": "3471683",
     "city_name": "Arcos",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.28194",
@@ -9965,7 +9965,7 @@
   {
     "city_id": "3471691",
     "city_name": "Araxá",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.59333",
@@ -9992,7 +9992,7 @@
   {
     "city_id": "3471758",
     "city_name": "Araras",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.35694",
@@ -10001,7 +10001,7 @@
   {
     "city_id": "3471766",
     "city_name": "Araraquara",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.79444",
@@ -10010,7 +10010,7 @@
   {
     "city_id": "3471772",
     "city_name": "Araranguá",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-28.93575",
@@ -10028,7 +10028,7 @@
   {
     "city_id": "3471830",
     "city_name": "Araguari",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-18.64722",
@@ -10037,7 +10037,7 @@
   {
     "city_id": "3471840",
     "city_name": "Aragarças",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.8975",
@@ -10046,7 +10046,7 @@
   {
     "city_id": "3471846",
     "city_name": "Araçuaí",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.84972",
@@ -10064,7 +10064,7 @@
   {
     "city_id": "3471849",
     "city_name": "Araçoiaba da Serra",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.50528",
@@ -10082,7 +10082,7 @@
   {
     "city_id": "3471859",
     "city_name": "Araçatuba",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.20889",
@@ -10091,7 +10091,7 @@
   {
     "city_id": "3471872",
     "city_name": "Aracaju",
-    "state_code": "AC",
+    "state_code": "SE",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.91111",
@@ -10100,7 +10100,7 @@
   {
     "city_id": "3471896",
     "city_name": "Aquidauana",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.47111",
@@ -10118,7 +10118,7 @@
   {
     "city_id": "3471927",
     "city_name": "Apiaí",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-24.50944",
@@ -10127,7 +10127,7 @@
   {
     "city_id": "3471940",
     "city_name": "Aparecida do Taboado",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.08667",
@@ -10136,7 +10136,7 @@
   {
     "city_id": "3471949",
     "city_name": "Aparecida",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.84694",
@@ -10154,7 +10154,7 @@
   {
     "city_id": "3472138",
     "city_name": "Anicuns",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.46111",
@@ -10172,7 +10172,7 @@
   {
     "city_id": "3472248",
     "city_name": "Andradina",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.89611",
@@ -10181,7 +10181,7 @@
   {
     "city_id": "3472254",
     "city_name": "Andradas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.06806",
@@ -10190,7 +10190,7 @@
   {
     "city_id": "3472284",
     "city_name": "Anastácio",
-    "state_code": "MT",
+    "state_code": "MS",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-20.48361",
@@ -10199,7 +10199,7 @@
   {
     "city_id": "3472287",
     "city_name": "Anápolis",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.32667",
@@ -10208,7 +10208,7 @@
   {
     "city_id": "3472311",
     "city_name": "Amparo",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.70111",
@@ -10217,7 +10217,7 @@
   {
     "city_id": "3472338",
     "city_name": "Américo Brasiliense",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.72444",
@@ -10226,7 +10226,7 @@
   {
     "city_id": "3472343",
     "city_name": "Americana",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.73917",
@@ -10244,7 +10244,7 @@
   {
     "city_id": "3472417",
     "city_name": "Álvares Machado",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.07944",
@@ -10262,7 +10262,7 @@
   {
     "city_id": "3472520",
     "city_name": "Almenara",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.18361",
@@ -10271,7 +10271,7 @@
   {
     "city_id": "3472603",
     "city_name": "Alfenas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.42917",
@@ -10280,7 +10280,7 @@
   {
     "city_id": "3472609",
     "city_name": "Além Paraíba",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.88778",
@@ -10316,7 +10316,7 @@
   {
     "city_id": "3472808",
     "city_name": "Aimorés",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.49583",
@@ -10325,7 +10325,7 @@
   {
     "city_id": "3472825",
     "city_name": "Agudos",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.46917",
@@ -10334,7 +10334,7 @@
   {
     "city_id": "3472848",
     "city_name": "Águas Vermelhas",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.74722",
@@ -10343,7 +10343,7 @@
   {
     "city_id": "3472869",
     "city_name": "Águas de Lindóia",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.47639",
@@ -10352,7 +10352,7 @@
   {
     "city_id": "3472969",
     "city_name": "Aguaí",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-22.05944",
@@ -10361,7 +10361,7 @@
   {
     "city_id": "3473157",
     "city_name": "Adamantina",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-21.68528",
@@ -10370,7 +10370,7 @@
   {
     "city_id": "3473267",
     "city_name": "Abaeté",
-    "state_code": "PA",
+    "state_code": "MG",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-19.16",
@@ -10388,7 +10388,7 @@
   {
     "city_id": "3474574",
     "city_name": "Palmas",
-    "state_code": "31",
+    "state_code": "TO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.16745",
@@ -10406,7 +10406,7 @@
   {
     "city_id": "3661980",
     "city_name": "Tarauacá",
-    "state_code": "RO",
+    "state_code": "AC",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-8.16139",
@@ -10424,7 +10424,7 @@
   {
     "city_id": "3662155",
     "city_name": "Sena Madureira",
-    "state_code": "RO",
+    "state_code": "AC",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.06341",
@@ -10442,7 +10442,7 @@
   {
     "city_id": "3662574",
     "city_name": "Rio Branco",
-    "state_code": "RO",
+    "state_code": "AC",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.97472",
@@ -10451,7 +10451,7 @@
   {
     "city_id": "3662762",
     "city_name": "Porto Velho",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-8.76194",
@@ -10505,7 +10505,7 @@
   {
     "city_id": "3664464",
     "city_name": "Cruzeiro do Sul",
-    "state_code": "RO",
+    "state_code": "AC",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-7.62759",
@@ -10532,7 +10532,7 @@
   {
     "city_id": "3664980",
     "city_name": "Boa Vista",
-    "state_code": "SP",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "2.81972",
@@ -10541,7 +10541,7 @@
   {
     "city_id": "3665199",
     "city_name": "Ariquemes",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.91333",
@@ -10550,7 +10550,7 @@
   {
     "city_id": "3665202",
     "city_name": "Aripuanã",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-9.16667",
@@ -10559,7 +10559,7 @@
   {
     "city_id": "3924679",
     "city_name": "Vilhena",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-12.74056",
@@ -10568,7 +10568,7 @@
   {
     "city_id": "3924877",
     "city_name": "Pôsto Fiscal Rolim de Moura",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-13.08271",
@@ -10577,7 +10577,7 @@
   {
     "city_id": "3924908",
     "city_name": "Pimenta Bueno",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-11.6725",
@@ -10586,7 +10586,7 @@
   {
     "city_id": "3924948",
     "city_name": "Ouro Preto do Oeste",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.74806",
@@ -10595,7 +10595,7 @@
   {
     "city_id": "3925033",
     "city_name": "Ji Paraná",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.88528",
@@ -10604,7 +10604,7 @@
   {
     "city_id": "3925040",
     "city_name": "Jaru",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.43889",
@@ -10613,7 +10613,7 @@
   {
     "city_id": "3925075",
     "city_name": "Guajará Mirim",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-10.78278",
@@ -10622,7 +10622,7 @@
   {
     "city_id": "3925212",
     "city_name": "Cacoal",
-    "state_code": "SC",
+    "state_code": "RO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-11.43861",
@@ -10631,7 +10631,7 @@
   {
     "city_id": "6316406",
     "city_name": "Aparecida de Goiânia",
-    "state_code": "RR",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-16.82333",
@@ -10640,7 +10640,7 @@
   {
     "city_id": "6316729",
     "city_name": "Campinas",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.59444",
@@ -10694,7 +10694,7 @@
   {
     "city_id": "6318696",
     "city_name": "Sinop",
-    "state_code": "MG",
+    "state_code": "MT",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-11.86417",
@@ -10712,7 +10712,7 @@
   {
     "city_id": "7874479",
     "city_name": "Trindade",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.58612",
@@ -10721,7 +10721,7 @@
   {
     "city_id": "11184422",
     "city_name": "Planaltina",
-    "state_code": "DF",
+    "state_code": "GO",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-15.61791",
@@ -10784,7 +10784,7 @@
   {
     "city_id": "3461425",
     "city_name": "Ilhabela",
-    "state_code": "TO",
+    "state_code": "SP",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-23.77806",
@@ -10793,7 +10793,7 @@
   {
     "city_id": "3470597",
     "city_name": "Barra Velha",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-26.63222",
@@ -10802,7 +10802,7 @@
   {
     "city_id": "7874492",
     "city_name": "Freguesia do Ribeirao da Ilha",
-    "state_code": "SE",
+    "state_code": "PR",
     "country_code": "BR",
     "country_full": "Brazil",
     "lat": "-27.71773",
