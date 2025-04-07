@@ -455,7 +455,13 @@ fun MainScreen(
 
                         CurrentWeatherCard(currentWeather, context, cor)
                         Spacer(modifier = Modifier.height(16.dp))
-                        HourlyForecastRow(state.hourlyForecast, cor)
+                        HourlyForecastRow(
+                            state.hourlyForecast,
+                            cor,
+                            context,
+                            state.weatherInfo.latitude,
+                            state.weatherInfo.longitude)
+
                         Spacer(modifier = Modifier.height(16.dp))
                         DailyForecastList(state.dailyForecast, cor)
                     }

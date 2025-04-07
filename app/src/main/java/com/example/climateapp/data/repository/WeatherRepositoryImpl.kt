@@ -42,7 +42,9 @@ class WeatherRepositoryImpl @Inject constructor(
             humidity = weather.relativeHumidity,
             windSpeed = weather.windSpeed,
             rain = weather.precipitation,
-            isDay = weather.weather.icon.last() == 'd'
+            isDay = weather.weather.icon.last() == 'd',
+            latitude = weather.latitude,
+            longitude = weather.longitude
         )
     }
 
