@@ -126,6 +126,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainScreen(
+
     modifier: Modifier = Modifier,
     currentLocation: Location?,
     onGetLocation: () -> Unit
@@ -137,11 +138,11 @@ fun MainScreen(
     val cidades = remember { carregarCidadesDoJson(context) }
     var searchQuery by remember { mutableStateOf("") }
     var showSearchResults by remember { mutableStateOf(false) }
-    
+
     val searchResults = remember(searchQuery) {
         if (searchQuery.length >= 2) {
             val normalizedQuery = normalizeText(searchQuery)
-            cidades.filter { 
+            cidades.filter {
                 normalizeText(it.city_name).contains(normalizedQuery, ignoreCase = true) ||
                 normalizeText(it.state).contains(normalizedQuery, ignoreCase = true)
             }
@@ -183,7 +184,7 @@ fun MainScreen(
                         color = Color.White
                     )
                     Divider(color = Color.White.copy(alpha = 0.5f))
-                    
+
                     OutlinedTextField(
                         value = searchQuery,
                         onValueChange = {
@@ -218,6 +219,8 @@ fun MainScreen(
                         },
                         singleLine = true,
                         colors = OutlinedTextFieldDefaults.colors(
+                            focusedContainerColor = Color.Transparent,
+                            unfocusedContainerColor = Color.Transparent,
                             focusedTextColor = Color.White,
                             unfocusedTextColor = Color.White,
                             focusedBorderColor = Color.White,
@@ -237,17 +240,17 @@ fun MainScreen(
                             LazyColumn {
                                 items(searchResults) { city ->
                                     ListItem(
-                                        headlineContent = { 
+                                        headlineContent = {
                                             Text(
                                                 city.city_name,
                                                 color = Color.White
-                                            ) 
+                                            )
                                         },
-                                        supportingContent = { 
+                                        supportingContent = {
                                             Text(
                                                 city.state,
                                                 color = Color.White.copy(alpha = 0.7f)
-                                            ) 
+                                            )
                                         },
                                         modifier = Modifier.clickable {
                                             searchQuery = ""
@@ -282,22 +285,7 @@ fun MainScreen(
                         }
                     )
 
-                    NavigationDrawerItem(
-                        icon = { 
-                            Icon(
-                                imageVector = Icons.Default.Settings,
-                                contentDescription = "Configurações",
-                                tint = Color.White
-                            )
-                        },
-                        label = { Text("Configurações", color = Color.White) },
-                        selected = false,
-                        onClick = {
-                            scope.launch { drawerState.close() }
-                            // Implemente a navegação para a tela de configurações
-                        },
-                        modifier = Modifier.padding(vertical = 4.dp)
-                    )
+
                 }
             }
         }
@@ -305,7 +293,7 @@ fun MainScreen(
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { 
+                    title = {
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.Start
@@ -360,84 +348,6 @@ fun MainScreen(
                         .padding(vertical = 16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Card(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(horizontal = 16.dp),
-                        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-
-                        colors = CardColors(
-                            containerColor = if (state.weatherInfo?.isDay ?: true) {
-                                DarkBlueSky
-                            } else {
-                                DarkNightBlue
-                            },
-                            contentColor = if (state.weatherInfo?.isDay ?: true) {
-                                Color.White
-                            } else {
-                                Color.White
-                            },
-                            disabledContainerColor = if (state.weatherInfo?.isDay ?: true) {
-                                DarkBlueSky.copy(alpha = 0.5f)
-                            } else {
-                                DarkNightBlue.copy(alpha = 0.5f)
-                            },
-                            disabledContentColor = Color.Gray
-                        )
-                    ) {
-                        Column(
-                            modifier = Modifier
-                                .padding(16.dp)
-                                .fillMaxWidth(),
-                            horizontalAlignment = Alignment.CenterHorizontally
-                        ) {
-                            Row(
-                                modifier = Modifier.fillMaxWidth(),
-                                horizontalArrangement = Arrangement.SpaceBetween,
-                                verticalAlignment = Alignment.CenterVertically
-                            ) {
-                                Text(
-                                    "Localização Atual",
-                                    style = MaterialTheme.typography.titleMedium
-                                )
-                                IconButton(onClick = onGetLocation) { Text("") }
-                            }
-
-                            currentLocation?.let { location ->
-                                Row(
-                                    modifier = Modifier.fillMaxWidth(),
-                                    horizontalArrangement = Arrangement.SpaceEvenly
-                                ) {
-                                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                        Text(
-                                            "Latitude",
-                                            style = MaterialTheme.typography.bodyMedium
-                                        )
-                                        Text(
-                                            String.format("%.6f°", location.latitude),
-                                            style = MaterialTheme.typography.titleMedium
-                                        )
-                                    }
-                                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                        Text(
-                                            "Longitude",
-                                            style = MaterialTheme.typography.bodyMedium
-                                        )
-                                        Text(
-                                            String.format("%.6f°", location.longitude),
-                                            style = MaterialTheme.typography.titleMedium
-                                        )
-                                    }
-                                }
-                            } ?: Text(
-                                text = "Localização não disponível",
-                                style = MaterialTheme.typography.bodyMedium,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
-                        }
-                    }
-
-                    Spacer(modifier = Modifier.height(16.dp))
 
                     state.weatherInfo?.let {
                         val currentWeather = CurrentWeather(
@@ -454,9 +364,9 @@ fun MainScreen(
                         } else DarkNightBlue
 
                         CurrentWeatherCard(currentWeather, context, cor)
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(13.dp))
                         HourlyForecastRow(state.hourlyForecast, cor)
-                        Spacer(modifier = Modifier.height(16.dp))
+                        Spacer(modifier = Modifier.height(13.dp))
                         DailyForecastList(state.dailyForecast, cor)
                     }
                 }
@@ -474,6 +384,7 @@ fun SavedCitiesList(
     LazyColumn {
         items(savedCities) { city ->
             ListItem(
+
                 headlineContent = { 
                     Text(
                         text = city.cityName,
@@ -495,7 +406,11 @@ fun SavedCitiesList(
                         )
                     }
                 },
+                colors = ListItemDefaults.colors(
+                    containerColor = Color.Transparent
+                ),
                 modifier = Modifier.clickable { onCitySelected(city) }
+
             )
         }
     }

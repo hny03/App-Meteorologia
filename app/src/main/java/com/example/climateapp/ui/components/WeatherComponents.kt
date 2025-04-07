@@ -2,6 +2,7 @@ package com.example.climateapp.ui.components
 
 import android.content.Context
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -26,6 +27,8 @@ import com.example.climateapp.ui.theme.NightBlue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.LocationOn
+import androidx.compose.ui.draw.blur
+import androidx.compose.ui.graphics.graphicsLayer
 
 @Composable
 fun CurrentWeatherCard(weather: CurrentWeather, context: Context, cor: Color) {
@@ -33,7 +36,7 @@ fun CurrentWeatherCard(weather: CurrentWeather, context: Context, cor: Color) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+
         colors = CardColors(
             containerColor = cor,
             contentColor = Color.White,
@@ -41,61 +44,64 @@ fun CurrentWeatherCard(weather: CurrentWeather, context: Context, cor: Color) {
             disabledContentColor = Color.White
         )
     ) {
-        Column(
-            modifier = Modifier
-                .padding(16.dp)
-                .fillMaxWidth(),
-        ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween
+
+            Column(
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(),
             ) {
-                Column(
-                    modifier = Modifier
-                        .weight(1f)
-                        .padding(start = 16.dp)
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    Text(
-                        text = "${weather.temperature}°C",
-                        style = MaterialTheme.typography.displayMedium,
-                        modifier = Modifier.padding(bottom = 8.dp)
+                    Column(
+                        modifier = Modifier
+                            .weight(1f)
+                            .padding(start = 16.dp)
+                    ) {
+                        Text(
+                            text = "${weather.temperature}°C",
+                            style = MaterialTheme.typography.displayMedium,
+                            modifier = Modifier.padding(bottom = 8.dp)
+                        )
+
+                        Text(
+                            text = weather.description,
+                            style = MaterialTheme.typography.titleMedium,
+                            modifier = Modifier.padding(bottom = 16.dp)
+                        )
+                    }
+
+                    val iconDrawableResId: Int = context.resources.getIdentifier(
+                        "img_${weather.icon}",
+                        "drawable",
+                        context.packageName
                     )
 
-                    Text(
-                        text = weather.description,
-                        style = MaterialTheme.typography.titleMedium,
-                        modifier = Modifier.padding(bottom = 16.dp)
+                    Image(
+                        painter = painterResource(id = iconDrawableResId),
+                        contentDescription = null,
+                        contentScale = ContentScale.Fit,
+                        modifier = Modifier
+                            .size(80.dp)
+                            .padding(end = 8.dp)
                     )
                 }
 
-                val iconDrawableResId: Int = context.resources.getIdentifier(
-                    "img_${weather.icon}",
-                    "drawable",
-                    context.packageName
-                )
-
-                Image(
-                    painter = painterResource(id = iconDrawableResId),
-                    contentDescription = null,
-                    contentScale = ContentScale.Fit,
-                    modifier = Modifier
-                        .size(80.dp)
-                        .padding(end = 8.dp)
-                )
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.Center,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    WeatherInfoItem("Umidade", "${weather.humidity}%")
+                    Spacer(modifier = Modifier.width(32.dp))
+                    WeatherInfoItem("Vento", "${weather.windSpeed} km/h")
+                    Spacer(modifier = Modifier.width(32.dp))
+                    WeatherInfoItem("Chuva", "${weather.rain} mm")
+                }
             }
 
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.Center,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                WeatherInfoItem("Umidade", "${weather.humidity}%")
-                Spacer(modifier = Modifier.width(32.dp))
-                WeatherInfoItem("Vento", "${weather.windSpeed} km/h")
-                Spacer(modifier = Modifier.width(32.dp))
-                WeatherInfoItem("Chuva", "${weather.rain} mm")
-            }
-        }
+
     }
 }
 
@@ -105,7 +111,6 @@ fun HourlyForecastRow(forecasts: List<HourlyForecast>, cor: Color) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(horizontal = 16.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
         colors = CardColors(
             containerColor = cor,
             contentColor = Color.White,
@@ -167,7 +172,6 @@ fun DailyForecastList(forecasts: List<DailyForecast>, cor : Color) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
         colors = CardColors(
             containerColor = cor,
             contentColor = Color.White,
