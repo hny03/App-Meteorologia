@@ -133,6 +133,38 @@ fun HourlyForecastRow(forecasts: List<HourlyForecast>, cor: Color) {
     }
 }
 
+/**
+ * Subtrai 3 horas de um horário no formato HH:mm
+ * @param time String no formato "HH:mm" (formato 24h)
+ * @return String no formato "HH:mm" após subtrair 3 horas
+ */
+fun subtractThreeHours(time: String): String {
+    try {
+        // Divide a string em horas e minutos
+        val parts = time.split(":")
+        if (parts.size != 2) {
+            return time // Retorna o valor original em caso de formato inválido
+        }
+
+        var hours = parts[0].toInt()
+        val minutes = parts[1].toInt()
+
+        // Subtrai 3 horas
+        hours -= 3
+
+        // Ajusta horas negativas (caso seja entre 00:00 e 02:59)
+        if (hours < 0) {
+            hours += 24
+        }
+
+        // Formata o resultado para garantir que tenha dois dígitos
+        return String.format("%02d:%02d", hours, minutes)
+    } catch (e: Exception) {
+        // Em caso de erro, retorna o valor original
+        return time
+    }
+}
+
 @Composable
 fun HourlyForecastItem(forecast: HourlyForecast) {
     Column(
@@ -140,7 +172,7 @@ fun HourlyForecastItem(forecast: HourlyForecast) {
         modifier = Modifier.padding(horizontal = 4.dp)
     ) {
         Text(
-            text = forecast.time,
+            text = subtractThreeHours(forecast.time),
             style = MaterialTheme.typography.bodyMedium
         )
         val iconDrawableResId: Int = LocalContext.current.resources.getIdentifier(
