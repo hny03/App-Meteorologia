@@ -18,6 +18,12 @@ import androidx.compose.ui.unit.dp
 import com.example.climateapp.data.CurrentWeather
 import com.example.climateapp.data.DailyForecast
 import com.example.climateapp.data.HourlyForecast
+import android.location.Geocoder
+import android.os.Build
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import java.util.TimeZone
 import com.example.climateapp.ui.theme.BlueSky
 import com.example.climateapp.ui.theme.DarkBlueSky
 import com.example.climateapp.ui.theme.DarkNightBlue
@@ -106,7 +112,11 @@ fun CurrentWeatherCard(weather: CurrentWeather, context: Context, cor: Color) {
 }
 
 @Composable
-fun HourlyForecastRow(forecasts: List<HourlyForecast>, cor: Color) {
+fun HourlyForecastRow(forecasts: List<HourlyForecast>,
+                      cor: Color,
+                      context: Context,
+                      latitude: Double,
+                      longitude: Double) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -131,21 +141,79 @@ fun HourlyForecastRow(forecasts: List<HourlyForecast>, cor: Color) {
                 contentPadding = PaddingValues(horizontal = 8.dp)
             ) {
                 items(forecasts) { forecast ->
-                    HourlyForecastItem(forecast)
+                    HourlyForecastItem(forecast, context, latitude, longitude)
                 }
             }
         }
     }
 }
 
+/**
+ * Ajusta um horário UTC para o fuso horário local baseado em coordenadas
+ * @param time String no formato "HH:mm"
+ * @param latitude Latitude da localização
+ * @param longitude Longitude da localização
+ * @return String no formato "HH:mm" ajustado para o fuso horário local
+ */
+fun adjustTimeForLocation(
+    context: Context,
+    time: String,
+    latitude: Double,
+    longitude: Double
+): String {
+    // Obter o fuso horário aproximado baseado na longitude
+    val hourOffset = (longitude / 15.0).toInt()
+    val timezoneId = when {
+        // Brasil (simplificado)
+        latitude >= -33.0 && latitude <= 5.0 && longitude >= -74.0 && longitude <= -34.0 -> {
+            when {
+                // Acre/Amazonas (UTC-4)
+                longitude <= -56.0 -> "GMT-4"
+                // Horário de Brasília (UTC-3)
+                else -> "GMT-3"
+            }
+        }
+        // Caso não seja Brasil, usa cálculo aproximado pela longitude
+        else -> if (hourOffset >= 0) "GMT+$hourOffset" else "GMT$hourOffset"
+    }
+
+    try {
+        // Converte o horário
+        val today = SimpleDateFormat("yyyy-MM-dd").format(Date())
+        val dateTimeStr = "$today $time"
+
+        val inputFormat = SimpleDateFormat("yyyy-MM-dd HH:mm").apply {
+            timeZone = TimeZone.getTimeZone("UTC")
+        }
+        val date = inputFormat.parse(dateTimeStr) ?: return time
+
+        val outputFormat = SimpleDateFormat("HH:mm").apply {
+            timeZone = TimeZone.getTimeZone(timezoneId)
+        }
+
+        return outputFormat.format(date)
+    } catch (e: Exception) {
+        e.printStackTrace()
+        return time
+    }
+}
+
 @Composable
-fun HourlyForecastItem(forecast: HourlyForecast) {
+fun HourlyForecastItem(forecast: HourlyForecast,
+                       context: Context,
+                       latitude: Double,
+                       longitude: Double) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.padding(horizontal = 4.dp)
     ) {
         Text(
-            text = forecast.time,
+            text = adjustTimeForLocation(
+                context = context,
+                time = forecast.time,
+                latitude = latitude,
+                longitude = longitude,
+                ),
             style = MaterialTheme.typography.bodyMedium
         )
         val iconDrawableResId: Int = LocalContext.current.resources.getIdentifier(

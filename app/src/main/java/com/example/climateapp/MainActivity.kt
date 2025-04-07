@@ -365,7 +365,13 @@ fun MainScreen(
 
                         CurrentWeatherCard(currentWeather, context, cor)
                         Spacer(modifier = Modifier.height(13.dp))
-                        HourlyForecastRow(state.hourlyForecast, cor)
+                        HourlyForecastRow(
+                            state.hourlyForecast,
+                            cor,
+                            context,
+                            state.weatherInfo.latitude,
+                            state.weatherInfo.longitude)
+
                         Spacer(modifier = Modifier.height(13.dp))
                         DailyForecastList(state.dailyForecast, cor)
                     }
@@ -385,7 +391,7 @@ fun SavedCitiesList(
         items(savedCities) { city ->
             ListItem(
 
-                headlineContent = { 
+                headlineContent = {
                     Text(
                         text = city.cityName,
                         color = Color.White

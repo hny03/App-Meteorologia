@@ -15,5 +15,7 @@ data class WeatherInfo(
     val rain: Double,
     val hourlyForecast: List<HourlyForecast> = emptyList(),
     val dailyForecast: List<DailyForecast> = emptyList(),
-    val isDay: Boolean
+    val isDay: Boolean,
+    val latitude: Double,
+    val longitude: Double
 )
