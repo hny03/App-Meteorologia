@@ -29,7 +29,7 @@ class KtorRemoteDataSource @Inject constructor() : RemoteDataSource {
         private const val CURRENT_URL = "https://api.weatherbit.io/v2.0/current"
         private const val HOURLY_URL = "https://api.weatherbit.io/v2.0/forecast/hourly"
         private const val DAILY_URL = "https://api.weatherbit.io/v2.0/forecast/daily" // ✅ novo
-        private const val API_KEY = "f4e94ecc2f0042f6b727f985999d97ff"
+        private const val API_KEY = "98c13e90a04d48bbba455170923ce167"
     }
 
     override suspend fun getWeatherDataResponse(lat: Float, lng: Float): WeatherDataResponse {
