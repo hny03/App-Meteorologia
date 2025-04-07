@@ -49,14 +49,38 @@ class WeatherRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getHourlyForecast(lat: Float, lng: Float): List<HourlyForecast> {
+        // Primeiro, obtemos o horário local da cidade
+        val weatherData = remoteDataSource.getWeatherDataResponse(lat, lng)
+        val currentLocalTime = weatherData.data.firstOrNull()?.datetime ?: run {
+            Log.e("TimeError", "Não foi possível obter o horário local da cidade")
+            return emptyList()
+        }
+        
         val data = remoteDataSource.getHourlyForecastFromWeatherbit(lat, lng)
+        
+        // Parse o horário local atual
+        val inputFormat = SimpleDateFormat("yyyy-MM-dd:HH", Locale.getDefault())
+        val currentDate = inputFormat.parse(currentLocalTime)
+        val currentHour = Calendar.getInstance().apply { time = currentDate }.get(Calendar.HOUR_OF_DAY)
+        
+        // Encontra o primeiro forecast após a hora atual
+        val startIndex = data.indexOfFirst { forecast ->
+            val forecastTime = try {
+                val forecastDate = inputFormat.parse(forecast.timestampUtc.substring(0, 13).replace("T", ":"))
+                val calendar = Calendar.getInstance()
+                calendar.time = forecastDate
+                calendar.get(Calendar.HOUR_OF_DAY)
+            } catch (e: Exception) {
+                -1
+            }
+            forecastTime > currentHour
+        }.takeIf { it != -1 } ?: 0
 
-        return data.take(24).map {
+        return data.drop(startIndex).take(24).map {
             val time = try {
-                val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault())
+                val forecastDate = inputFormat.parse(it.timestampUtc.substring(0, 13).replace("T", ":"))
                 val outputFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
-                val date = inputFormat.parse(it.timestampUtc)
-                outputFormat.format(date)
+                outputFormat.format(forecastDate)
             } catch (e: Exception) {
                 Log.e("ParseTime", "Erro ao converter hora: ${it.timestampUtc}", e)
                 "--:--"
