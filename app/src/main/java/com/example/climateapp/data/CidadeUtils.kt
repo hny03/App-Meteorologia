@@ -9,3 +9,11 @@ fun carregarCidadesDoJson(context: Context): List<Cidade> {
     val jsonString = inputStream.bufferedReader().use { it.readText() }
     return Json.decodeFromString(jsonString)
 }
+
+fun buscarCidadesPorNome(context: Context, query: String): List<Cidade> {
+    if (query.isBlank()) return emptyList()
+    val cidades = carregarCidadesDoJson(context)
+    return cidades.filter { cidade ->
+        cidade.city_name.contains(query, ignoreCase = true)
+    }.take(10)
+}

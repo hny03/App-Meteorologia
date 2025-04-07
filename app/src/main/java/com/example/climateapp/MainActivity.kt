@@ -144,7 +144,7 @@ fun MainScreen(
             val normalizedQuery = normalizeText(searchQuery)
             cidades.filter {
                 normalizeText(it.city_name).contains(normalizedQuery, ignoreCase = true) ||
-                normalizeText(it.state).contains(normalizedQuery, ignoreCase = true)
+                normalizeText(it.state_code).contains(normalizedQuery, ignoreCase = true)
             }
         } else emptyList()
     }
@@ -219,8 +219,9 @@ fun MainScreen(
                         },
                         singleLine = true,
                         colors = OutlinedTextFieldDefaults.colors(
-                            focusedContainerColor = Color.Transparent,
-                            unfocusedContainerColor = Color.Transparent,
+                            focusedContainerColor = Color(0xFFA8C5F0),
+                            disabledContainerColor = Color(0xFFA8C5F0),
+                            unfocusedContainerColor = Color(0xFFA8C5F0),
                             focusedTextColor = Color.White,
                             unfocusedTextColor = Color.White,
                             focusedBorderColor = Color.White,
@@ -248,7 +249,7 @@ fun MainScreen(
                                         },
                                         supportingContent = {
                                             Text(
-                                                city.state,
+                                                city.state_code,
                                                 color = Color.White.copy(alpha = 0.7f)
                                             )
                                         },
@@ -256,7 +257,7 @@ fun MainScreen(
                                             searchQuery = ""
                                             showSearchResults = false
                                             viewModel.updateWeatherInfo(city.lat.toFloat(), city.lon.toFloat())
-                                            viewModel.saveCurrentCity(city.city_name, city.state, city.lat, city.lon)
+                                            viewModel.saveCurrentCity(city.city_name, city.state_code, city.lat, city.lon)
                                             keyboardController?.hide()
                                             scope.launch { drawerState.close() }
                                         }

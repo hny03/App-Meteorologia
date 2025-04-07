@@ -30,10 +30,15 @@ data class WeatherData(
     val hourly: List<HourlyForecast>,
     val daily: List<DailyForecast>
 )
+
 @Serializable
 data class Cidade(
+    val city_id: String,
     val city_name: String,
-    val state: String,
+    val state_code: String,
+    val country_code: String,
+    val country_full: String,
     val lat: Double,
     val lon: Double
 )
+
