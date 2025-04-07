@@ -5,6 +5,8 @@ import com.example.climateapp.data.HourlyForecast
 import com.example.climateapp.data.di.module.WeatherInfo
 import com.example.climateapp.data.remote.RemoteDataSource
 import com.example.climateapp.data.DailyForecast
+import java.text.SimpleDateFormat
+import java.util.*
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import javax.inject.Inject
@@ -37,7 +39,6 @@ class WeatherRepositoryImpl @Inject constructor(
             condition = weather.weather.description,
             temperature = weather.temperature,
             apparentTemperature = weather.apparentTemperature,
-            //dayOfWeek = LocalDate.now().dayOfWeek.getDisplayName(TextStyle.FULL, Locale.getDefault()),
             humidity = weather.relativeHumidity,
             windSpeed = weather.windSpeed,
             rain = weather.precipitation,
@@ -48,13 +49,12 @@ class WeatherRepositoryImpl @Inject constructor(
     override suspend fun getHourlyForecast(lat: Float, lng: Float): List<HourlyForecast> {
         val data = remoteDataSource.getHourlyForecastFromWeatherbit(lat, lng)
 
-        return data.take(6).map {
+        return data.take(24).map {
             val time = try {
-                val utcTime = java.time.LocalDateTime.parse(it.timestampUtc)
-                utcTime
-                    .atOffset(java.time.ZoneOffset.UTC)
-                    .atZoneSameInstant(java.time.ZoneId.systemDefault())
-                    .format(DateTimeFormatter.ofPattern("HH:mm"))
+                val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault())
+                val outputFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
+                val date = inputFormat.parse(it.timestampUtc)
+                outputFormat.format(date)
             } catch (e: Exception) {
                 Log.e("ParseTime", "Erro ao converter hora: ${it.timestampUtc}", e)
                 "--:--"
@@ -73,11 +73,13 @@ class WeatherRepositoryImpl @Inject constructor(
 
         return data.take(7).map {
             val day = try {
-                LocalDate.parse(it.valid_date)
-                    .dayOfWeek
-                    .getDisplayName(java.time.format.TextStyle.SHORT, java.util.Locale("pt", "BR"))
-                    .replaceFirstChar { if (it.isLowerCase()) it.titlecase() else it.toString() }
-                    .replace(".", "")
+                val inputFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                val date = inputFormat.parse(it.valid_date)
+                val calendar = Calendar.getInstance()
+                calendar.time = date
+                
+                val dayNames = arrayOf("Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb")
+                dayNames[calendar.get(Calendar.DAY_OF_WEEK) - 1]
             } catch (e: Exception) {
                 Log.e("ParseDay", "Erro ao converter data: ${it.valid_date}", e)
                 "Dia"

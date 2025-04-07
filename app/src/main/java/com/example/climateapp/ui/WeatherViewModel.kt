@@ -6,6 +6,8 @@ import androidx.lifecycle.viewModelScope
 import com.example.climateapp.data.HourlyForecast
 import com.example.climateapp.data.repository.WeatherRepository
 import com.example.climateapp.data.DailyForecast
+import com.example.climateapp.data.local.SavedCity
+import com.example.climateapp.data.repository.SavedCityRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -16,11 +18,56 @@ import javax.inject.Inject
 
 @HiltViewModel
 class WeatherViewModel @Inject constructor(
-    private val repository: WeatherRepository
+    private val repository: WeatherRepository,
+    private val savedCityRepository: SavedCityRepository
 ) : ViewModel() {
 
     private val _weatherInfoState = MutableStateFlow(WeatherInfoState())
     val weatherInfoState: StateFlow<WeatherInfoState> = _weatherInfoState.asStateFlow()
+
+    private val _savedCities = MutableStateFlow<List<SavedCity>>(emptyList())
+    val savedCities: StateFlow<List<SavedCity>> = _savedCities.asStateFlow()
+
+    init {
+        loadSavedCities()
+    }
+
+    private fun loadSavedCities() {
+        viewModelScope.launch {
+            savedCityRepository.getAllCities().collect { cities ->
+                _savedCities.value = cities
+            }
+        }
+    }
+
+    fun saveCurrentCity(cityName: String, state: String, lat: Double, lon: Double) {
+        viewModelScope.launch {
+            try {
+                // Verifica se a cidade já existe
+                val existingCity = savedCityRepository.getCity(cityName, state)
+                if (existingCity == null) {
+                    // Se não existir, salva a nova cidade
+                    val city = SavedCity(
+                        cityName = cityName,
+                        state = state,
+                        latitude = lat,
+                        longitude = lon
+                    )
+                    savedCityRepository.saveCity(city)
+                }
+            } catch (e: Exception) {
+                _weatherInfoState.update { it.copy(
+                    error = "Erro ao salvar cidade: ${e.message}"
+                ) }
+            }
+        }
+    }
+
+    fun deleteSavedCity(city: SavedCity) {
+        viewModelScope.launch {
+            savedCityRepository.deleteCity(city)
+        }
+    }
 
     fun updateWeatherInfo(latitude: Float, longitude: Float) {
         viewModelScope.launch {
@@ -45,13 +92,12 @@ class WeatherViewModel @Inject constructor(
                         error = null
                     )
                 }
-
             } catch (e: Exception) {
-                Log.e("ClimaApp", "Erro ao buscar clima: ${e.message}", e)
+                Log.e("ClimaApp", "Erro ao buscar dados do clima", e)
                 _weatherInfoState.update {
                     it.copy(
                         isLoading = false,
-                        error = e.message ?: "Falha ao buscar dados do clima"
+                        error = "Erro ao buscar dados do clima: ${e.message}"
                     )
                 }
             }

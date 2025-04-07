@@ -23,6 +23,9 @@ import com.example.climateapp.ui.theme.DarkNightBlue
 import com.example.climateapp.ui.theme.LightBlueSky
 import com.example.climateapp.ui.theme.LightNightBlue
 import com.example.climateapp.ui.theme.NightBlue
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.LocationOn
 
 @Composable
 fun CurrentWeatherCard(weather: CurrentWeather, context: Context, cor: Color) {
@@ -42,11 +45,29 @@ fun CurrentWeatherCard(weather: CurrentWeather, context: Context, cor: Color) {
             modifier = Modifier
                 .padding(16.dp)
                 .fillMaxWidth(),
-            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Row(
+                modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(start = 16.dp)
+                ) {
+                    Text(
+                        text = "${weather.temperature}°C",
+                        style = MaterialTheme.typography.displayMedium,
+                        modifier = Modifier.padding(bottom = 8.dp)
+                    )
+
+                    Text(
+                        text = weather.description,
+                        style = MaterialTheme.typography.titleMedium,
+                        modifier = Modifier.padding(bottom = 16.dp)
+                    )
+                }
+
                 val iconDrawableResId: Int = context.resources.getIdentifier(
                     "img_${weather.icon}",
                     "drawable",
@@ -56,39 +77,23 @@ fun CurrentWeatherCard(weather: CurrentWeather, context: Context, cor: Color) {
                 Image(
                     painter = painterResource(id = iconDrawableResId),
                     contentDescription = null,
-                    contentScale = ContentScale.Fit
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier
+                        .size(80.dp)
+                        .padding(end = 8.dp)
                 )
-
-                Column(
-                    verticalArrangement = Arrangement.SpaceBetween
-                ) {
-                    Text(
-                        text = weather.city,
-                        style = MaterialTheme.typography.titleLarge,
-                        modifier = Modifier.padding(bottom = 16.dp)
-                    )
-
-                    Text(
-                        text = "${weather.temperature}°C",
-                        style = MaterialTheme.typography.displayMedium,
-                        modifier = Modifier.padding(bottom = 16.dp)
-                    )
-                    Text(
-                        text = weather.description,
-                        style = MaterialTheme.typography.titleMedium
-                    )
-                }
             }
-
-            Spacer(modifier = Modifier.height(16.dp))
 
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
             ) {
-                WeatherInfoItem("Humidity", "${weather.humidity}%")
-                WeatherInfoItem("Wind", "${weather.windSpeed} km/h")
-                WeatherInfoItem("Rain", "${weather.rain} mm")
+                WeatherInfoItem("Umidade", "${weather.humidity}%")
+                Spacer(modifier = Modifier.width(32.dp))
+                WeatherInfoItem("Vento", "${weather.windSpeed} km/h")
+                Spacer(modifier = Modifier.width(32.dp))
+                WeatherInfoItem("Chuva", "${weather.rain} mm")
             }
         }
     }
@@ -112,12 +117,13 @@ fun HourlyForecastRow(forecasts: List<HourlyForecast>, cor: Color) {
             modifier = Modifier.padding(16.dp)
         ) {
             Text(
-                text = "Previsão por Hora",
+                text = "Previsão para as Próximas 24 Horas",
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
             LazyRow(
-                horizontalArrangement = Arrangement.spacedBy(16.dp)
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                contentPadding = PaddingValues(horizontal = 8.dp)
             ) {
                 items(forecasts) { forecast ->
                     HourlyForecastItem(forecast)
@@ -130,11 +136,23 @@ fun HourlyForecastRow(forecasts: List<HourlyForecast>, cor: Color) {
 @Composable
 fun HourlyForecastItem(forecast: HourlyForecast) {
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.padding(horizontal = 4.dp)
     ) {
         Text(
             text = forecast.time,
             style = MaterialTheme.typography.bodyMedium
+        )
+        val iconDrawableResId: Int = LocalContext.current.resources.getIdentifier(
+            "img_${forecast.icon}",
+            "drawable",
+            LocalContext.current.packageName
+        )
+        Image(
+            painter = painterResource(id = iconDrawableResId),
+            contentDescription = null,
+            contentScale = ContentScale.Fit,
+            modifier = Modifier.size(32.dp)
         )
         Text(
             text = "${forecast.temperature}°C",
@@ -189,10 +207,22 @@ fun DailyForecastItem(forecast: DailyForecast) {
             style = MaterialTheme.typography.bodyLarge,
             modifier = Modifier.weight(1f)
         )
+        val iconDrawableResId: Int = LocalContext.current.resources.getIdentifier(
+            "img_${forecast.icon}",
+            "drawable",
+            LocalContext.current.packageName
+        )
+        Image(
+            painter = painterResource(id = iconDrawableResId),
+            contentDescription = null,
+            contentScale = ContentScale.Fit,
+            modifier = Modifier.size(40.dp)
+        )
         Text(
             text = "${forecast.minTemperature}°C / ${forecast.maxTemperature}°C",
             style = MaterialTheme.typography.bodyLarge,
-            textAlign = TextAlign.End
+            textAlign = TextAlign.End,
+            modifier = Modifier.padding(start = 8.dp)
         )
     }
 }

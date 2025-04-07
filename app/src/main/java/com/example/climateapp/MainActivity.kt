@@ -18,17 +18,23 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.climateapp.data.*
+import com.example.climateapp.data.local.SavedCity
 import com.example.climateapp.ui.WeatherViewModel
 import com.example.climateapp.ui.components.*
 import com.example.climateapp.ui.theme.ClimateAppTheme
@@ -44,6 +50,7 @@ import com.example.climateapp.ui.theme.DarkNightBlue
 import com.example.climateapp.ui.theme.LightBlueSky
 import com.example.climateapp.ui.theme.LightNightBlue
 import com.example.climateapp.ui.theme.NightBlue
+import java.text.Normalizer
 
 
 @AndroidEntryPoint
@@ -126,13 +133,19 @@ fun MainScreen(
     val viewModel: WeatherViewModel = viewModel()
     val state = viewModel.weatherInfoState.collectAsState().value
     val context = LocalContext.current
+    val keyboardController = LocalSoftwareKeyboardController.current
     val cidades = remember { carregarCidadesDoJson(context) }
     var searchQuery by remember { mutableStateOf("") }
     var showSearchResults by remember { mutableStateOf(false) }
+    
     val searchResults = remember(searchQuery) {
-        if (searchQuery.length >= 2)
-            cidades.filter { it.city_name.contains(searchQuery, ignoreCase = true) }
-        else emptyList()
+        if (searchQuery.length >= 2) {
+            val normalizedQuery = normalizeText(searchQuery)
+            cidades.filter { 
+                normalizeText(it.city_name).contains(normalizedQuery, ignoreCase = true) ||
+                normalizeText(it.state).contains(normalizedQuery, ignoreCase = true)
+            }
+        } else emptyList()
     }
 
     LaunchedEffect(currentLocation) {
@@ -151,14 +164,26 @@ fun MainScreen(
     ModalNavigationDrawer(
         drawerState = drawerState,
         drawerContent = {
-            ModalDrawerSheet {
-                Text(
-                    text = "Menu",
-                    modifier = Modifier.padding(16.dp),
-                    style = MaterialTheme.typography.titleLarge
-                )
-                Divider()
-                Box {
+            ModalDrawerSheet(
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .width(280.dp),
+                drawerContainerColor = if (state.weatherInfo?.isDay ?: true) LightBlueSky else LightNightBlue,
+                drawerContentColor = Color.White
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp)
+                ) {
+                    Text(
+                        text = "Menu",
+                        style = MaterialTheme.typography.headlineMedium,
+                        color = Color.White
+                    )
+                    Divider(color = Color.White.copy(alpha = 0.5f))
+                    
                     OutlinedTextField(
                         value = searchQuery,
                         onValueChange = {
@@ -166,42 +191,113 @@ fun MainScreen(
                             showSearchResults = true
                         },
                         modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(16.dp),
-                        placeholder = { Text("Pesquisar localização...") },
+                            .fillMaxWidth(),
+                        placeholder = { Text("Pesquisar localização...", color = Color.White.copy(alpha = 0.7f)) },
                         leadingIcon = {
-                            Icon(Icons.Default.Search, contentDescription = "Search")
+                            Icon(
+                                Icons.Default.Search,
+                                contentDescription = "Search",
+                                tint = Color.White
+                            )
                         },
-                        singleLine = true
+                        trailingIcon = {
+                            if (searchQuery.isNotEmpty()) {
+                                IconButton(
+                                    onClick = {
+                                        searchQuery = ""
+                                        showSearchResults = false
+                                    }
+                                ) {
+                                    Icon(
+                                        imageVector = Icons.Default.Close,
+                                        contentDescription = "Limpar pesquisa",
+                                        tint = Color.White
+                                    )
+                                }
+                            }
+                        },
+                        singleLine = true,
+                        colors = OutlinedTextFieldDefaults.colors(
+                            focusedTextColor = Color.White,
+                            unfocusedTextColor = Color.White,
+                            focusedBorderColor = Color.White,
+                            unfocusedBorderColor = Color.White.copy(alpha = 0.7f),
+                            focusedLabelColor = Color.White,
+                            unfocusedLabelColor = Color.White.copy(alpha = 0.7f)
+                        )
                     )
+
                     if (showSearchResults && searchResults.isNotEmpty()) {
                         Surface(
                             modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(top = 80.dp),
-                            color = MaterialTheme.colorScheme.surface,
+                                .fillMaxWidth(),
+                            color = if (state.weatherInfo?.isDay ?: true) LightBlueSky else LightNightBlue,
                             tonalElevation = 8.dp
                         ) {
                             LazyColumn {
                                 items(searchResults) { city ->
                                     ListItem(
-                                        headlineContent = { Text(city.city_name) },
-                                        supportingContent = { Text(city.state) },
+                                        headlineContent = { 
+                                            Text(
+                                                city.city_name,
+                                                color = Color.White
+                                            ) 
+                                        },
+                                        supportingContent = { 
+                                            Text(
+                                                city.state,
+                                                color = Color.White.copy(alpha = 0.7f)
+                                            ) 
+                                        },
                                         modifier = Modifier.clickable {
-                                            searchQuery = "${city.city_name}, ${city.state}"
+                                            searchQuery = ""
                                             showSearchResults = false
                                             viewModel.updateWeatherInfo(city.lat.toFloat(), city.lon.toFloat())
-
-                                            // Fechar o menu lateral (hambúrguer)
-                                            scope.launch {
-                                                drawerState.close()
-                                            }
+                                            viewModel.saveCurrentCity(city.city_name, city.state, city.lat, city.lon)
+                                            keyboardController?.hide()
+                                            scope.launch { drawerState.close() }
                                         }
                                     )
                                 }
                             }
                         }
                     }
+
+                    Text(
+                        text = "Cidades Salvas",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 16.dp)
+                    )
+
+                    val savedCities by viewModel.savedCities.collectAsState()
+                    SavedCitiesList(
+                        savedCities = savedCities,
+                        onCitySelected = { city ->
+                            viewModel.updateWeatherInfo(city.latitude.toFloat(), city.longitude.toFloat())
+                            scope.launch { drawerState.close() }
+                        },
+                        onDeleteCity = { city ->
+                            viewModel.deleteSavedCity(city)
+                        }
+                    )
+
+                    NavigationDrawerItem(
+                        icon = { 
+                            Icon(
+                                imageVector = Icons.Default.Settings,
+                                contentDescription = "Configurações",
+                                tint = Color.White
+                            )
+                        },
+                        label = { Text("Configurações", color = Color.White) },
+                        selected = false,
+                        onClick = {
+                            scope.launch { drawerState.close() }
+                            // Implemente a navegação para a tela de configurações
+                        },
+                        modifier = Modifier.padding(vertical = 4.dp)
+                    )
                 }
             }
         }
@@ -209,15 +305,42 @@ fun MainScreen(
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Previsão do Tempo") },
+                    title = { 
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.Start
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.LocationOn,
+                                contentDescription = "Localização",
+                                tint = Color.White,
+                                modifier = Modifier.size(24.dp)
+                            )
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Text(
+                                state.weatherInfo?.locationName ?: "Carregando...",
+                                color = Color.White
+                            )
+                        }
+                    },
                     navigationIcon = {
                         IconButton(onClick = { scope.launch { drawerState.open() } }) {
-                            Icon(Icons.Default.Menu, contentDescription = "Menu")
+                            Icon(
+                                imageVector = Icons.Default.Menu,
+                                contentDescription = "Menu",
+                                tint = Color.White
+                            )
                         }
-                    }
+                    },
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = Color.Transparent,
+                        titleContentColor = Color.White,
+                        navigationIconContentColor = Color.White
+                    )
                 )
-            }
-        ) { innerPadding ->
+            },
+            containerColor = Color.Transparent
+        ) { paddingValues ->
             Box(
                 modifier = Modifier
                     .fillMaxSize()
@@ -228,12 +351,12 @@ fun MainScreen(
                             } else listOf(NightBlue, LightNightBlue)
                         )
                     )
+                    .padding(paddingValues)
             ) {
                 Column(
                     modifier = modifier
                         .fillMaxSize()
                         .verticalScroll(rememberScrollState())
-                        .padding(innerPadding)
                         .padding(vertical = 16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
@@ -324,7 +447,7 @@ fun MainScreen(
                             rain = it.rain ?: 0.0,
                             description = it.condition ?: "N/A",
                             icon = it.icon ?: "01d",
-                            city = it.locationName ?: ""
+                            city = ""
                         )
                         val cor = if (state.weatherInfo?.isDay ?: true) {
                             DarkBlueSky
@@ -340,4 +463,46 @@ fun MainScreen(
             }
         }
     }
+}
+
+@Composable
+fun SavedCitiesList(
+    savedCities: List<SavedCity>,
+    onCitySelected: (SavedCity) -> Unit,
+    onDeleteCity: (SavedCity) -> Unit
+) {
+    LazyColumn {
+        items(savedCities) { city ->
+            ListItem(
+                headlineContent = { 
+                    Text(
+                        text = city.cityName,
+                        color = Color.White
+                    ) 
+                },
+                supportingContent = { 
+                    Text(
+                        text = city.state,
+                        color = Color.White.copy(alpha = 0.7f)
+                    ) 
+                },
+                trailingContent = {
+                    IconButton(onClick = { onDeleteCity(city) }) {
+                        Icon(
+                            imageVector = Icons.Default.Delete,
+                            contentDescription = "Deletar cidade",
+                            tint = Color.White
+                        )
+                    }
+                },
+                modifier = Modifier.clickable { onCitySelected(city) }
+            )
+        }
+    }
+}
+
+fun normalizeText(text: String): String {
+    return Normalizer.normalize(text, Normalizer.Form.NFD)
+        .replace("[^\\p{ASCII}]".toRegex(), "")
+        .lowercase()
 }
